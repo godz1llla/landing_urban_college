@@ -131,13 +131,6 @@
 
         <!-- Sticky Scroll Timeline -->
         <section id="timeline" class="timeline-scroll-section">
-            <!-- Title shown before user enters the sticky zone -->
-            <div class="container timeline-intro reveal">
-                <h2>МАҢЫЗДЫ КЕЗЕҢДЕР</h2>
-                <p>Колледжіміздің даму жолы — нақты нәтижелер мен батыл өзгерістер тарихы.</p>
-            </div>
-
-            <!-- Sticky wrapper: tall so user scrolls through it -->
             <div class="timeline-sticky-wrapper">
                 <div class="timeline-sticky">
                     <!-- Progress dots -->
@@ -145,17 +138,29 @@
                         <span class="tl-dot active" data-index="0"></span>
                         <span class="tl-dot" data-index="1"></span>
                         <span class="tl-dot" data-index="2"></span>
+                        <span class="tl-dot" data-index="3"></span>
                     </div>
 
                     <!-- Slides -->
                     <div class="tl-slides">
-                        <div class="tl-slide active" data-index="0">
+                        <!-- Slide 0: Intro -->
+                        <div class="tl-slide tl-slide--intro active" data-index="0">
+                            <div class="tl-body">
+                                <p class="tl-section-label">Тарих</p>
+                                <h2 class="tl-big-title">МАҢЫЗДЫ КЕЗЕҢДЕР</h2>
+                                <p class="tl-subtitle">Колледжіміздің даму жолы — нақты нәтижелер мен батыл өзгерістер
+                                    тарихы.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 1: 2005 -->
+                        <div class="tl-slide" data-index="1">
                             <div class="tl-icon" style="color:#FFB030; border-color:#FFB030;">
                                 <i class='bx bx-flag'></i>
                             </div>
                             <div class="tl-body">
                                 <div class="tl-meta">
-                                    <span class="tl-year">2005</span>
+                                    <span class="tl-year" style="color:#FFB030;">2005</span>
                                     <span class="tl-label" style="color:#FFB030;">БАСТАУ</span>
                                 </div>
                                 <h3>Қаржы-Экономикалық Колледждің Негізі</h3>
@@ -165,13 +170,14 @@
                             </div>
                         </div>
 
-                        <div class="tl-slide" data-index="1">
+                        <!-- Slide 2: 2013 -->
+                        <div class="tl-slide" data-index="2">
                             <div class="tl-icon" style="color:#27A38A; border-color:#27A38A;">
                                 <i class='bx bx-bulb'></i>
                             </div>
                             <div class="tl-body">
                                 <div class="tl-meta">
-                                    <span class="tl-year">2013</span>
+                                    <span class="tl-year" style="color:#27A38A;">2013</span>
                                     <span class="tl-label" style="color:#27A38A;">ҚАЛЫПТАСУ</span>
                                 </div>
                                 <h3>Инженерлік-Экономикалық Колледж</h3>
@@ -180,13 +186,14 @@
                             </div>
                         </div>
 
-                        <div class="tl-slide" data-index="2">
+                        <!-- Slide 3: 2022 -->
+                        <div class="tl-slide" data-index="3">
                             <div class="tl-icon" style="color:#E12553; border-color:#E12553;">
                                 <i class='bx bx-rocket'></i>
                             </div>
                             <div class="tl-body">
                                 <div class="tl-meta">
-                                    <span class="tl-year">2022</span>
+                                    <span class="tl-year" style="color:#E12553;">2022</span>
                                     <span class="tl-label" style="color:#E12553;">ӨЗГЕРІСТЕР УАҚЫТЫ</span>
                                 </div>
                                 <h3>URBAN COLLEGE</h3>
@@ -196,16 +203,9 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Scroll hint -->
-                    <div class="tl-scroll-hint">
-                        <span>Скролл</span>
-                        <i class='bx bx-chevrons-down'></i>
-                    </div>
                 </div>
             </div>
         </section>
-
 
         <section id="now" class="now-section reveal">
             <!-- Bold Banner Header -->
