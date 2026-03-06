@@ -314,45 +314,132 @@ img {
     box-shadow: 0 0 0 4px rgba(225, 37, 83, 0.1);
 }
 
-/* Timeline Elite */
+/* Timeline Redesign */
 .timeline {
     position: relative;
-    max-width: 900px;
-    margin: 60px auto 0;
-    padding-left: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 20px;
+    left: 50%;
     top: 0;
-    width: 3px;
+    width: 2px;
     height: 100%;
-    background: linear-gradient(to bottom, var(--primary-red), var(--light-grey));
+    background: var(--primary-black);
+    transform: translateX(-50%);
 }
 
 .timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50%;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
+    width: 100%;
 }
 
-.timeline-dot {
+.timeline-item.right {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: 50%;
+}
+
+.timeline-icon {
     position: absolute;
-    left: -48px;
+    left: 50%;
     top: 0;
-    width: 20px;
-    height: 20px;
-    background: var(--primary-red);
-    border: 4px solid var(--text-light);
+    width: 80px;
+    height: 80px;
+    background: var(--surface-light);
+    border: 2px solid #EEE;
     border-radius: 50%;
-    box-shadow: 0 0 0 8px rgba(225, 37, 83, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    transform: translate(-50%, -100%);
+    z-index: 10;
+    margin-top: -20px;
+}
+
+/* Dots on the line */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: var(--primary-black);
+    border-radius: 50%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+}
+
+.timeline-content {
+    max-width: 400px;
+    text-align: right;
+    padding: 0 40px;
+}
+
+.timeline-item.right .timeline-content {
+    text-align: left;
+}
+
+.timeline-header {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 12px;
 }
 
 .timeline-year {
-    font-size: 32px;
-    color: var(--primary-red);
-    margin-bottom: 8px;
+    color: var(--primary-black);
+}
+
+.timeline-tag {
+    text-transform: uppercase;
+}
+
+.font-muted {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item,
+    .timeline-item.right {
+        justify-content: flex-start;
+        padding-left: 80px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item::after,
+    .timeline-icon {
+        left: 30px;
+    }
+
+    .timeline-content,
+    .timeline-item.right .timeline-content {
+        text-align: left;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .timeline-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        transform: translate(-50%, -120%);
+    }
 }
 
 .mt-40 {
