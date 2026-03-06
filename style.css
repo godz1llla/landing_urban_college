@@ -109,7 +109,7 @@ img {
 }
 
 .section {
-    padding: clamp(60px, 12vw, 140px) 0;
+    padding: clamp(40px, 8vw, 100px) 0;
     position: relative;
     overflow: hidden;
 }
@@ -272,6 +272,128 @@ img {
     margin-top: -120px;
     z-index: 20;
     padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* =========================================
+   About Section - Premium Split Design
+   ========================================= */
+.about-section {
+    background: var(--primary-black);
+    padding: 0;
+    overflow: visible;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 480px;
+}
+
+.about-left {
+    padding: clamp(48px, 8vw, 100px) clamp(32px, 6vw, 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.about-left::after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 10%;
+    width: 2px;
+    height: 80%;
+    background: linear-gradient(to bottom, transparent, var(--primary-red), transparent);
+}
+
+.about-left h2 {
+    color: var(--text-light);
+    font-size: clamp(28px, 4vw, 48px);
+    margin-bottom: 24px;
+}
+
+.about-left p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 400px;
+}
+
+.about-right {
+    background: var(--surface-light);
+    padding: clamp(48px, 8vw, 80px) clamp(32px, 6vw, 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.mission-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 28px;
+    background: var(--card-bg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--primary-red);
+    transition: 0.3s;
+}
+
+.mission-item:hover {
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--accent-yellow);
+}
+
+.mission-item:last-child {
+    border-left-color: var(--accent-green);
+}
+
+.mission-item:last-child:hover {
+    border-left-color: var(--primary-red);
+}
+
+.mission-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--primary-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.mission-item:last-child .mission-icon {
+    background: var(--accent-green);
+}
+
+.mission-body h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--primary-black);
+}
+
+.mission-body p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-left::after {
+        display: none;
+    }
 }
 
 /* =========================================
