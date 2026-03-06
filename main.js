@@ -101,4 +101,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // =============================================
+    // Timeline Scroll Animations (IntersectionObserver)
+    // =============================================
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Get index to stagger delay
+                const index = [...timelineItems].indexOf(entry.target);
+                entry.target.style.transitionDelay = `${index * 0.15}s`;
+                entry.target.classList.add('animate');
+                timelineObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -80px 0px'
+    });
+
+    timelineItems.forEach(item => timelineObserver.observe(item));
 });
