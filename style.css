@@ -274,6 +274,108 @@ img {
     padding-top: 0;
 }
 
+/* =========================================
+   Urban School Section - Full Layout
+   ========================================= */
+.school-section {
+    background: #EFEFEF;
+    padding: 80px 0;
+}
+
+.school-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+
+.school-visual {
+    flex: 0 0 45%;
+    max-width: 45%;
+    position: relative;
+    z-index: 1;
+}
+
+.school-banner {
+    width: 100%;
+    display: block;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.school-card {
+    flex: 0 0 58%;
+    max-width: 58%;
+    background: #F8F8F8;
+    padding: 56px 64px;
+    margin-left: -3%;
+    position: relative;
+    z-index: 10;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.school-card h2 {
+    color: var(--primary-black);
+    font-size: clamp(26px, 3vw, 40px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 900;
+    text-transform: none;
+}
+
+.accent-line {
+    width: 60px;
+    height: 4px;
+    background: #F39C12;
+    margin-bottom: 28px;
+    border-radius: 2px;
+}
+
+.school-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.btn-school {
+    display: inline-block;
+    background: #F39C12;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 48px;
+    border-radius: 8px;
+    margin-top: 40px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.btn-school:hover {
+    background: #E67E22;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(230, 126, 34, 0.35);
+}
+
+@media (max-width: 900px) {
+    .school-container {
+        flex-direction: column;
+    }
+
+    .school-visual,
+    .school-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .school-card {
+        padding: 40px 32px;
+        margin-top: -20px;
+    }
+}
+
 .lead-card {
     max-width: 600px;
     margin: 0 auto;
@@ -349,21 +451,27 @@ img {
 }
 
 .timeline-icon {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background: var(--surface-light);
     border: 2px solid #EEE;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
-    transform: translate(-50%, -100%);
-    z-index: 10;
-    margin-top: -20px;
+    font-size: 40px;
+    margin: 0 auto 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.timeline-item.left .timeline-icon {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.timeline-item.right .timeline-icon {
+    margin-left: 0;
+    margin-right: auto;
 }
 
 /* Dots on the line */
@@ -371,23 +479,27 @@ img {
     content: '';
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 110px;
+    /* Aligned with the header area */
     width: 16px;
     height: 16px;
     background: var(--primary-black);
     border-radius: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     z-index: 5;
 }
 
 .timeline-content {
-    max-width: 400px;
-    text-align: right;
-    padding: 0 40px;
+    max-width: 480px;
+    padding: 0 60px;
 }
 
 .timeline-item.right .timeline-content {
     text-align: left;
+}
+
+.timeline-item.left .timeline-content {
+    text-align: right;
 }
 
 .timeline-header {
@@ -411,34 +523,37 @@ img {
 
 @media (max-width: 768px) {
     .timeline::before {
-        left: 30px;
+        left: 20px;
     }
 
     .timeline-item,
     .timeline-item.right {
         justify-content: flex-start;
-        padding-left: 80px;
+        padding-left: 50px;
         padding-right: 0;
         text-align: left;
     }
 
-    .timeline-item::after,
-    .timeline-icon {
-        left: 30px;
+    .timeline-item::after {
+        left: 20px;
+        top: 30px;
     }
 
     .timeline-content,
-    .timeline-item.right .timeline-content {
+    .timeline-item.right .timeline-content,
+    .timeline-item.left .timeline-content {
         text-align: left;
         max-width: 100%;
-        padding: 0;
+        padding: 20px 0;
     }
 
     .timeline-icon {
         width: 60px;
         height: 60px;
         font-size: 24px;
-        transform: translate(-50%, -120%);
+        transform: translate(0, 0);
+        /* Removed original transform */
+        margin: 0 0 16px 0 !important;
     }
 }
 
