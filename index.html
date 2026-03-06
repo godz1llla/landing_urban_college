@@ -129,48 +129,83 @@
             </div>
         </section>
 
-        <section id="timeline" class="section reveal">
-            <div class="container">
-                <h2 class="text-center mb-80">МАҢЫЗДЫ КЕЗЕҢДЕР</h2>
-                <div class="timeline">
-                    <div class="timeline-item left">
-                        <div class="timeline-content">
-                            <div class="timeline-icon" style="color: #FFB030;"><i class='bx bx-flag'></i></div>
-                            <div class="timeline-header">
-                                <span class="timeline-year">2005 /</span>
-                                <span class="timeline-tag" style="color: #FFB030;">БАСТАУ</span>
+        <!-- Sticky Scroll Timeline -->
+        <section id="timeline" class="timeline-scroll-section">
+            <!-- Title shown before user enters the sticky zone -->
+            <div class="container timeline-intro reveal">
+                <h2>МАҢЫЗДЫ КЕЗЕҢДЕР</h2>
+                <p>Колледжіміздің даму жолы — нақты нәтижелер мен батыл өзгерістер тарихы.</p>
+            </div>
+
+            <!-- Sticky wrapper: tall so user scrolls through it -->
+            <div class="timeline-sticky-wrapper">
+                <div class="timeline-sticky">
+                    <!-- Progress dots -->
+                    <div class="tl-dots">
+                        <span class="tl-dot active" data-index="0"></span>
+                        <span class="tl-dot" data-index="1"></span>
+                        <span class="tl-dot" data-index="2"></span>
+                    </div>
+
+                    <!-- Slides -->
+                    <div class="tl-slides">
+                        <div class="tl-slide active" data-index="0">
+                            <div class="tl-icon" style="color:#FFB030; border-color:#FFB030;">
+                                <i class='bx bx-flag'></i>
                             </div>
-                            <p>ҚАРЖЫ-ЭКОНОМИКАЛЫҚ КОЛЛЕДЖДІҢ НЕГІЗI ҚАЛАНДЫ.</p>
+                            <div class="tl-body">
+                                <div class="tl-meta">
+                                    <span class="tl-year">2005</span>
+                                    <span class="tl-label" style="color:#FFB030;">БАСТАУ</span>
+                                </div>
+                                <h3>Қаржы-Экономикалық Колледждің Негізі</h3>
+                                <p>ҚАРЖЫ-ЭКОНОМИКАЛЫҚ КОЛЛЕДЖДІҢ НЕГІЗI ҚАЛАНДЫ. Еліміздің экономикалық дамуына үлес
+                                    қосатын жоғары білікті мамандарды даярлауға бағытталған жаңа оқу орнының іргетасы
+                                    қаланды.</p>
+                            </div>
+                        </div>
+
+                        <div class="tl-slide" data-index="1">
+                            <div class="tl-icon" style="color:#27A38A; border-color:#27A38A;">
+                                <i class='bx bx-bulb'></i>
+                            </div>
+                            <div class="tl-body">
+                                <div class="tl-meta">
+                                    <span class="tl-year">2013</span>
+                                    <span class="tl-label" style="color:#27A38A;">ҚАЛЫПТАСУ</span>
+                                </div>
+                                <h3>Инженерлік-Экономикалық Колледж</h3>
+                                <p>ИНДУСТРИЯЛАНДЫ ИНЖЕНЕРЛІК-ЭКОНОМИКАЛЫҚ КОЛЛЕДЖ. Сол уақыт аралығында экономика, ТКШ,
+                                    қонақ үй бизнесі саласында біздің <strong>1850 мамандарымыз</strong> дайындалды.</p>
+                            </div>
+                        </div>
+
+                        <div class="tl-slide" data-index="2">
+                            <div class="tl-icon" style="color:#E12553; border-color:#E12553;">
+                                <i class='bx bx-rocket'></i>
+                            </div>
+                            <div class="tl-body">
+                                <div class="tl-meta">
+                                    <span class="tl-year">2022</span>
+                                    <span class="tl-label" style="color:#E12553;">ӨЗГЕРІСТЕР УАҚЫТЫ</span>
+                                </div>
+                                <h3>URBAN COLLEGE</h3>
+                                <p>КОЛЛЕДЖ АТАУЫ ЗАМАНУИ <strong>URBAN COLLEGE</strong> ДЕП АТАЛДЫ. Жаңашылдыққа
+                                    жан-жақты, жаңа өмірге жақын колледж. Әрдайым өзгерістерге жақын колледж бүгінгі
+                                    күні түрлену үстінде.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="timeline-item right">
-                        <div class="timeline-content">
-                            <div class="timeline-icon" style="color: #27A38A;"><i class='bx bx-bulb'></i></div>
-                            <div class="timeline-header">
-                                <span class="timeline-year">2013 /</span>
-                                <span class="timeline-tag" style="color: #27A38A;">ҚАЛЫПТАСУ</span>
-                            </div>
-                            <p>ИНДУСТРИЯЛАНДЫ ИНЖЕНЕРЛІК-ЭКОНОМИКАЛЫҚ КОЛЛЕДЖ.</p>
-                            <p class="mt-16 font-muted">Сол уақыт аралығында экономика, ТКШ, қонақ үй бизнесі саласында
-                                біздің 1850 мамандарымыз дайындалды.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left">
-                        <div class="timeline-content">
-                            <div class="timeline-icon" style="color: #E12553;"><i class='bx bx-rocket'></i></div>
-                            <div class="timeline-header">
-                                <span class="timeline-year">2022 /</span>
-                                <span class="timeline-tag" style="color: #E12553;">ӨЗГЕРІСТЕР УАҚЫТЫ</span>
-                            </div>
-                            <p>КОЛЛЕДЖ АТАУЫ ЗАМАНУИ URBAN COLLEGE ДЕП АТАЛДЫ. ЖАҢАШЫЛДЫҚҚА ЖАН-ЖАҚТЫ ЖАНТЫ ӨМІРГЕ ЖАҚЫН
-                                КОЛЛЕДЖ.</p>
-                            <p class="mt-16 font-muted">Әрдайым өзгерістерге жақын колледж бүгінгі күні түрлену үстінде.
-                            </p>
-                        </div>
+
+                    <!-- Scroll hint -->
+                    <div class="tl-scroll-hint">
+                        <span>Скролл</span>
+                        <i class='bx bx-chevrons-down'></i>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <section id="now" class="now-section reveal">
             <!-- Bold Banner Header -->

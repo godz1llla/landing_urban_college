@@ -103,24 +103,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // =============================================
-    // Timeline Scroll Animations (IntersectionObserver)
+    // Sticky Scroll Timeline
     // =============================================
-    const timelineItems = document.querySelectorAll('.timeline-item');
+    const stickyWrapper = document.querySelector('.timeline-sticky-wrapper');
+    const slides = document.querySelectorAll('.tl-slide');
+    const dots = document.querySelectorAll('.tl-dot');
+    let currentSlide = 0;
 
-    const timelineObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                // Get index to stagger delay
-                const index = [...timelineItems].indexOf(entry.target);
-                entry.target.style.transitionDelay = `${index * 0.15}s`;
-                entry.target.classList.add('animate');
-                timelineObserver.unobserve(entry.target);
-            }
+    function activateSlide(index) {
+        if (index === currentSlide) return;
+
+        // Exit current slide
+        slides[currentSlide].classList.remove('active');
+        slides[currentSlide].classList.add('exit');
+        setTimeout(() => slides[currentSlide]?.classList.remove('exit'), 600);
+
+        dots[currentSlide].classList.remove('active');
+
+        // Enter new slide
+        currentSlide = index;
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    function onTimelineScroll() {
+        if (!stickyWrapper) return;
+        const rect = stickyWrapper.getBoundingClientRect();
+        const total = stickyWrapper.offsetHeight - window.innerHeight;
+        const scrolled = -rect.top; // How many px have been scrolled within the wrapper
+        const progress = Math.max(0, Math.min(1, scrolled / total)); // 0 → 1
+
+        const newIndex = Math.min(
+            slides.length - 1,
+            Math.floor(progress * slides.length)
+        );
+
+        if (newIndex !== currentSlide) activateSlide(newIndex);
+    }
+
+    // Dot click: jump scroll to that slide's position
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            if (!stickyWrapper) return;
+            const targetProgress = i / slides.length;
+            const maxScroll = stickyWrapper.offsetHeight - window.innerHeight;
+            const targetY = stickyWrapper.offsetTop + targetProgress * maxScroll;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
         });
-    }, {
-        threshold: 0.2,
-        rootMargin: '0px 0px -80px 0px'
     });
 
-    timelineItems.forEach(item => timelineObserver.observe(item));
+    window.addEventListener('scroll', onTimelineScroll, { passive: true });
+    onTimelineScroll();
 });

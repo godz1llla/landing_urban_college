@@ -538,62 +538,104 @@ img {
     box-shadow: 0 0 0 4px rgba(225, 37, 83, 0.1);
 }
 
-/* Timeline Redesign */
-.timeline {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 0;
+/* =========================================
+   Sticky Scroll Timeline
+   ========================================= */
+.timeline-scroll-section {
+    background: var(--surface-light);
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
+.timeline-intro {
+    padding: clamp(60px, 10vw, 120px) 0 40px;
+    max-width: 600px;
+}
+
+.timeline-intro h2 {
+    margin-bottom: 16px;
+}
+
+.timeline-intro p {
+    color: var(--text-muted);
+    font-size: 17px;
+}
+
+/* Tall wrapper — creates the scroll room */
+.timeline-sticky-wrapper {
+    height: 300vh;
+    /* 100vh per slide */
+    position: relative;
+}
+
+/* Sticks to viewport while user scrolls through the wrapper */
+.timeline-sticky {
+    position: sticky;
     top: 0;
-    width: 2px;
-    height: 100%;
-    background: var(--primary-black);
-    transform: translateX(-50%);
-}
-
-.timeline-item {
+    height: 100vh;
     display: flex;
-    justify-content: flex-end;
-    padding-right: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--primary-black);
+}
+
+/* Container for all slides */
+.tl-slides {
     position: relative;
-    margin-bottom: 100px;
     width: 100%;
+    max-width: 900px;
+    padding: 0 clamp(24px, 5vw, 80px);
+}
 
-    /* Initial hidden state */
+/* Individual slide */
+.tl-slide {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%) translateX(80px);
     opacity: 0;
-    transform: translateX(-60px);
-    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 clamp(24px, 5vw, 80px);
+    display: flex;
+    align-items: center;
+    gap: 48px;
 }
 
-.timeline-item.right {
-    justify-content: flex-start;
-    padding-right: 0;
-    padding-left: 50%;
-    transform: translateX(60px);
-    /* Slide in from the right */
-}
-
-/* Animated state applied by JS */
-.timeline-item.animate {
+.tl-slide.active {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(-50%) translateX(0);
+    pointer-events: auto;
 }
 
-/* Timeline icon pulse on enter */
-.timeline-item.animate .timeline-icon {
-    animation: iconPop 0.5s 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+.tl-slide.exit {
+    opacity: 0;
+    transform: translateY(-50%) translateX(-80px);
 }
 
-@keyframes iconPop {
+/* Icon circle */
+.tl-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.04);
+    transition: transform 0.4s;
+}
+
+.tl-slide.active .tl-icon {
+    animation: iconEntrance 0.5s 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes iconEntrance {
     from {
-        transform: scale(0.6);
+        transform: scale(0.5);
         opacity: 0;
     }
 
@@ -603,85 +645,104 @@ img {
     }
 }
 
-/* Dot also pops */
-.timeline-item.animate::after {
-    animation: dotPop 0.4s 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+/* Text content */
+.tl-body {
+    color: var(--text-light);
 }
 
-@keyframes dotPop {
-    from {
-        transform: translate(-50%, -50%) scale(0);
-    }
-
-    to {
-        transform: translate(-50%, -50%) scale(1);
-    }
-}
-
-.timeline-icon {
-    width: 100px;
-    height: 100px;
-    background: var(--surface-light);
-    border: 2px solid #EEE;
-    border-radius: 50%;
+.tl-meta {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    margin: 0 auto 24px;
-    box-shadow: var(--shadow-sm);
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 16px;
 }
 
-.timeline-item.left .timeline-icon {
-    margin-right: 0;
-    margin-left: auto;
-}
-
-.timeline-item.right .timeline-icon {
-    margin-left: 0;
-    margin-right: auto;
-}
-
-/* Dots on the line */
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 110px;
-    /* Aligned with the header area */
-    width: 16px;
-    height: 16px;
-    background: var(--primary-black);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-}
-
-.timeline-content {
-    max-width: 480px;
-    padding: 0 60px;
-}
-
-.timeline-item.right .timeline-content {
-    text-align: left;
-}
-
-.timeline-item.left .timeline-content {
-    text-align: right;
-}
-
-.timeline-header {
-    font-size: 24px;
+.tl-year {
+    font-size: clamp(40px, 8vw, 80px);
     font-weight: 900;
-    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.08);
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.timeline-year {
-    color: var(--primary-black);
-}
-
-.timeline-tag {
+.tl-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
+}
+
+.tl-body h3 {
+    font-size: clamp(24px, 4vw, 40px);
+    color: #fff;
+    margin-bottom: 16px;
+    text-transform: none;
+}
+
+.tl-body p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+/* Progress dots on right side */
+.tl-dots {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 10;
+}
+
+.tl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tl-dot.active {
+    background: var(--primary-red);
+    transform: scale(1.4);
+}
+
+/* Bottom scroll hint */
+.tl-scroll-hint {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    animation: scrollBounce 2s ease-in-out infinite;
+}
+
+.tl-scroll-hint i {
+    font-size: 20px;
+}
+
+@keyframes scrollBounce {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(8px);
+    }
 }
 
 .font-muted {
@@ -690,40 +751,25 @@ img {
 }
 
 @media (max-width: 768px) {
-    .timeline::before {
-        left: 20px;
+    .tl-slide {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
     }
 
-    .timeline-item,
-    .timeline-item.right {
-        justify-content: flex-start;
-        padding-left: 50px;
-        padding-right: 0;
-        text-align: left;
+    .tl-dots {
+        right: 16px;
     }
 
-    .timeline-item::after {
-        left: 20px;
-        top: 30px;
-    }
-
-    .timeline-content,
-    .timeline-item.right .timeline-content,
-    .timeline-item.left .timeline-content {
-        text-align: left;
+    .tl-body p {
         max-width: 100%;
-        padding: 20px 0;
     }
 
-    .timeline-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 24px;
-        transform: translate(0, 0);
-        /* Removed original transform */
-        margin: 0 0 16px 0 !important;
+    .timeline-sticky-wrapper {
+        height: 400vh;
     }
 }
+
 
 .mt-40 {
     margin-top: var(--space-40);
