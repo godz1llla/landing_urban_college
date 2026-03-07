@@ -18,15 +18,15 @@
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#about">Біз туралы</a></li>
-                    <li><a href="#timeline">Кезеңдер</a></li>
-                    <li><a href="#dual">Дуалдық оқыту</a></li>
-                    <li><a href="#partners">Серіктестер</a></li>
-                    <li><a href="#school">Urban School</a></li>
+                    <li><a href="#about" data-i18n="nav.about">Біз туралы</a></li>
+                    <li><a href="#timeline" data-i18n="nav.timeline">Кезеңдер</a></li>
+                    <li><a href="#dual" data-i18n="nav.dual">Дуалдық оқыту</a></li>
+                    <li><a href="#partners" data-i18n="nav.partners">Серіктестер</a></li>
+                    <li><a href="#school" data-i18n="nav.school">Urban School</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <button class="btn-yellow d-desktop">Жас талапкер</button>
+                <button class="btn-yellow d-desktop" data-i18n="nav.cta">Жас талапкер</button>
                 <div class="lang-pill d-desktop">
                     <button class="lang-pill-btn">РУС</button>
                     <button class="lang-pill-btn">ENG</button>
@@ -44,15 +44,15 @@
             </button>
             <nav class="mobile-nav">
                 <ul class="mobile-nav-list">
-                    <li><a href="#about">Біз туралы</a></li>
-                    <li><a href="#timeline">Кезеңдер</a></li>
-                    <li><a href="#dual">Дуалдық оқыту</a></li>
-                    <li><a href="#partners">Серіктестер</a></li>
-                    <li><a href="#school">Urban School</a></li>
+                    <li><a href="#about" data-i18n="nav.about">Біз туралы</a></li>
+                    <li><a href="#timeline" data-i18n="nav.timeline">Кезеңдер</a></li>
+                    <li><a href="#dual" data-i18n="nav.dual">Дуалдық оқыту</a></li>
+                    <li><a href="#partners" data-i18n="nav.partners">Серіктестер</a></li>
+                    <li><a href="#school" data-i18n="nav.school">Urban School</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu-actions">
-                <button class="btn-yellow w-100">Жас талапкер</button>
+                <button class="btn-yellow w-100" data-i18n="nav.cta">Жас талапкер</button>
                 <div class="lang-pill mt-32">
                     <button class="lang-pill-btn">РУС</button>
                     <button class="lang-pill-btn">ENG</button>
@@ -66,12 +66,13 @@
         <section class="hero reveal">
             <div class="container">
                 <div class="hero-content">
-                    <h1>КҮШ ҚУАТ МЕКЕНІ</h1>
-                    <p class="hero-subtitle">ЕРКІН ӨМІР СҮРУ ҮШІН ҚАЖЕТТІ ДАҒДЫЛАР. Болашаққа нық қадамды бізбен бірге
-                        жасаңыз.</p>
+                    <h1 data-i18n="hero.title">КҮШ ҚУАТ МЕКЕНІ</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">ЕРКІН ӨМІР СҮРУ ҮШІН ҚАЖЕТТІ ДАҒДЫЛАР. Болашаққа
+                        нық қадамды бізбен бірге жасаңыз.</p>
                     <div class="hero-actions">
-                        <a href="#form" class="btn-primary">Байланысқа шығу</a>
-                        <a href="#about" class="btn-secondary" style="margin-left: 16px;">Толығырақ</a>
+                        <a href="#form" class="btn-primary" data-i18n="hero.contact">Байланысқа шығу</a>
+                        <a href="#about" class="btn-secondary" style="margin-left: 16px;"
+                            data-i18n="hero.more">Толығырақ</a>
                     </div>
                 </div>
             </div>
@@ -80,26 +81,28 @@
         <section id="form" class="section lead-section reveal">
             <div class="container">
                 <div class="lead-card">
-                    <h2 class="text-center" style="margin-bottom: 40px;">Консультацияға жазылу</h2>
+                    <h2 class="text-center" style="margin-bottom: 40px;" data-i18n="form.title">Консультацияға жазылу
+                    </h2>
                     <form id="lead-form">
                         <div class="form-group">
-                            <label>Аты-жөніңіз</label>
-                            <input type="text" name="name" placeholder="Мысалы: Арман Серікұлы" required>
+                            <label data-i18n="form.name.label">Аты-жөніңіз</label>
+                            <input type="text" name="name" placeholder="Мысалы: Арман Серікұлы"
+                                data-i18n-placeholder="form.name.placeholder" required>
                         </div>
                         <div class="form-group">
-                            <label>Телефон нөмірі</label>
+                            <label data-i18n="form.phone.label">Телефон нөмірі</label>
                             <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
                         </div>
                         <div class="form-group">
-                            <label>Облыс/өңір</label>
+                            <label data-i18n="form.region.label">Облыс/өңір</label>
                             <select name="region" required>
-                                <option value="" disabled selected>Таңдаңыз</option>
+                                <option value="" disabled selected data-i18n="form.region.default">Таңдаңыз</option>
                                 <option value="astana">Астана</option>
                                 <option value="almaty">Алматы</option>
                                 <option value="shymkent">Шымкент</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn-primary w-100">Тіркелу</button>
+                        <button type="submit" class="btn-primary w-100" data-i18n="form.submit">Тіркелу</button>
                     </form>
                 </div>
             </div>
@@ -108,25 +111,25 @@
         <section id="about" class="about-section reveal">
             <div class="about-grid">
                 <div class="about-left">
-                    <h2>НЕГІЗГІ URBAN COLLEGE ТУРАЛЫ</h2>
-                    <p>Urban College — бұл тек білім ордасы ғана емес, бұл болашаққа жол ашатын, жаңа мүмкіндіктер
-                        мекені. Біз студенттеріміздің жан-жақты дамуына барлық жағдайды жасаймыз.</p>
+                    <h2 data-i18n="about.title">НЕГІЗГІ URBAN COLLEGE ТУРАЛЫ</h2>
+                    <p data-i18n="about.text">Urban College — бұл тек білім ордасы ғана емес, бұл болашаққа жол ашатын,
+                        жаңа мүмкіндіктер мекені. Біз студенттеріміздің жан-жақты дамуына барлық жағдайды жасаймыз.</p>
                 </div>
                 <div class="about-right">
                     <div class="mission-item">
                         <div class="mission-icon"><i class='bx bxs-bolt-circle'></i></div>
                         <div class="mission-body">
-                            <h3>БІЗДІҢ МИССИЯ</h3>
-                            <p>Ел экономикасының тұрақты дамуы үшін білімі мен интеллектісі бар білікті мамандарды
-                                дайындау.</p>
+                            <h3 data-i18n="about.mission.title">БІЗДІҢ МИССИЯ</h3>
+                            <p data-i18n="about.mission.text">Ел экономикасының тұрақты дамуы үшін білімі мен
+                                интеллектісі бар білікті мамандарды дайындау.</p>
                         </div>
                     </div>
                     <div class="mission-item">
                         <div class="mission-icon"><i class='bx bxs-check-shield'></i></div>
                         <div class="mission-body">
-                            <h3>БІЗДІҢ МІНДЕТТЕРІМІЗ</h3>
-                            <p>Бизнес арасындағы стратегиялық серіктестік жасау арқылы білім беру және кәсіби өсу үшін
-                                жағдай жасау.</p>
+                            <h3 data-i18n="about.goals.title">БІЗДІҢ МІНДЕТТЕРІМІЗ</h3>
+                            <p data-i18n="about.goals.text">Бизнес арасындағы стратегиялық серіктестік жасау арқылы
+                                білім беру және кәсіби өсу үшін жағдай жасау.</p>
                         </div>
                     </div>
                 </div>
@@ -150,10 +153,10 @@
                         <!-- Slide 0: Intro -->
                         <div class="tl-slide tl-slide--intro active" data-index="0">
                             <div class="tl-body">
-                                <p class="tl-section-label">Тарих</p>
-                                <h2 class="tl-big-title">МАҢЫЗДЫ КЕЗЕҢДЕР</h2>
-                                <p class="tl-subtitle">Колледжіміздің даму жолы — нақты нәтижелер мен батыл өзгерістер
-                                    тарихы.</p>
+                                <p class="tl-section-label" data-i18n="tl.label">Тарих</p>
+                                <h2 class="tl-big-title" data-i18n="tl.title">МАҢЫЗДЫ КЕЗЕҢДЕР</h2>
+                                <p class="tl-subtitle" data-i18n="tl.subtitle">Колледжіміздің даму жолы — нақты
+                                    нәтижелер мен батыл өзгерістер тарихы.</p>
                             </div>
                         </div>
 
@@ -165,12 +168,13 @@
                             <div class="tl-body">
                                 <div class="tl-meta">
                                     <span class="tl-year" style="color:#FFB030;">2005</span>
-                                    <span class="tl-label" style="color:#FFB030;">БАСТАУ</span>
+                                    <span class="tl-label" style="color:#FFB030;"
+                                        data-i18n="tl.2005.label">БАСТАУ</span>
                                 </div>
-                                <h3>Қаржы-Экономикалық Колледждің Негізі</h3>
-                                <p>ҚАРЖЫ-ЭКОНОМИКАЛЫҚ КОЛЛЕДЖДІҢ НЕГІЗI ҚАЛАНДЫ. Еліміздің экономикалық дамуына үлес
-                                    қосатын жоғары білікті мамандарды даярлауға бағытталған жаңа оқу орнының іргетасы
-                                    қаланды.</p>
+                                <h3 data-i18n="tl.2005.title">Қаржы-Экономикалық Колледждің Негізі</h3>
+                                <p data-i18n="tl.2005.text">ҚАРЖЫ-ЭКОНОМИКАЛЫҚ КОЛЛЕДЖДІҢ НЕГІЗI ҚАЛАНДЫ. Еліміздің
+                                    экономикалық дамуына үлес қосатын жоғары білікті мамандарды даярлауға бағытталған
+                                    жаңа оқу орнының іргетасы қаланды.</p>
                             </div>
                         </div>
 
@@ -182,11 +186,13 @@
                             <div class="tl-body">
                                 <div class="tl-meta">
                                     <span class="tl-year" style="color:#27A38A;">2013</span>
-                                    <span class="tl-label" style="color:#27A38A;">ҚАЛЫПТАСУ</span>
+                                    <span class="tl-label" style="color:#27A38A;"
+                                        data-i18n="tl.2013.label">ҚАЛЫПТАСУ</span>
                                 </div>
-                                <h3>Инженерлік-Экономикалық Колледж</h3>
-                                <p>ИНДУСТРИЯЛАНДЫ ИНЖЕНЕРЛІК-ЭКОНОМИКАЛЫҚ КОЛЛЕДЖ. Сол уақыт аралығында экономика, ТКШ,
-                                    қонақ үй бизнесі саласында біздің <strong>1850 мамандарымыз</strong> дайындалды.</p>
+                                <h3 data-i18n="tl.2013.title">Инженерлік-Экономикалық Колледж</h3>
+                                <p data-i18n="tl.2013.text">ИНДУСТРИЯЛАНДЫ ИНЖЕНЕРЛІК-ЭКОНОМИКАЛЫҚ КОЛЛЕДЖ. Сол уақыт
+                                    аралығында экономика, ТКШ, қонақ үй бизнесі саласында біздің 1850 мамандарымыз
+                                    дайындалды.</p>
                             </div>
                         </div>
 
@@ -198,10 +204,11 @@
                             <div class="tl-body">
                                 <div class="tl-meta">
                                     <span class="tl-year" style="color:#E12553;">2022</span>
-                                    <span class="tl-label" style="color:#E12553;">ӨЗГЕРІСТЕР УАҚЫТЫ</span>
+                                    <span class="tl-label" style="color:#E12553;" data-i18n="tl.2022.label">ӨЗГЕРІСТЕР
+                                        УАҚЫТЫ</span>
                                 </div>
-                                <h3>URBAN COLLEGE</h3>
-                                <p>КОЛЛЕДЖ АТАУЫ ЗАМАНУИ <strong>URBAN COLLEGE</strong> ДЕП АТАЛДЫ. Жаңашылдыққа
+                                <h3 data-i18n="tl.2022.title">URBAN COLLEGE</h3>
+                                <p data-i18n="tl.2022.text">КОЛЛЕДЖ АТАУЫ ЗАМАНУИ URBAN COLLEGE ДЕП АТАЛДЫ. Жаңашылдыққа
                                     жан-жақты, жаңа өмірге жақын колледж. Әрдайым өзгерістерге жақын колледж бүгінгі
                                     күні түрлену үстінде.</p>
                             </div>
@@ -217,10 +224,10 @@
                 <div class="container">
                     <div class="now-header-inner">
                         <div>
-                            <span class="now-label">ҚАЗІРГІ КЕЗДЕ</span>
+                            <span class="now-label" data-i18n="now.label">ҚАЗІРГІ КЕЗДЕ</span>
                             <h2>URBAN COLLEGE</h2>
                         </div>
-                        <p class="now-desc">Жаңа дем, жаңа мүмкіндіктер, заманауи орта.</p>
+                        <p class="now-desc" data-i18n="now.desc">Жаңа дем, жаңа мүмкіндіктер, заманауи орта.</p>
                     </div>
                 </div>
             </div>
@@ -231,14 +238,16 @@
                     <div class="now-card">
                         <div class="now-card-num">01</div>
                         <div class="now-card-icon"><i class='bx bxs-paint'></i></div>
-                        <h3>Ребрендинг</h3>
-                        <p>Әкімшілік және педагогикалық құрам 100% өзгерді. Колледжімізге жаңаша көзқарас келді.</p>
+                        <h3 data-i18n="now.card1.title">Ребрендинг</h3>
+                        <p data-i18n="now.card1.text">Әкімшілік және педагогикалық құрам 100% өзгерді. Колледжімізге
+                            жаңаша көзқарас келді.</p>
                     </div>
                     <div class="now-card">
                         <div class="now-card-num">02</div>
                         <div class="now-card-icon"><i class='bx bxs-wrench'></i></div>
-                        <h3>Жөндеу жұмыстары</h3>
-                        <p>Күрделі жөндеу жүргізіліп, ортамыз визуалды жаңарды. Студенттер үшін ең үздік жағдайлар.</p>
+                        <h3 data-i18n="now.card2.title">Жөндеу жұмыстары</h3>
+                        <p data-i18n="now.card2.text">Күрделі жөндеу жүргізіліп, ортамыз визуалды жаңарды. Студенттер
+                            үшін ең үздік жағдайлар.</p>
                     </div>
                 </div>
 
@@ -263,7 +272,7 @@
         <!-- Partners Section -->
         <section id="partners" class="partners-section reveal">
             <div class="container">
-                <h2 class="text-center mb-64">БІЗДІҢ СЕРІКТЕСТЕРІМІЗ</h2>
+                <h2 class="text-center mb-64" data-i18n="partners.title">БІЗДІҢ СЕРІКТЕСТЕРІМІЗ</h2>
                 <div class="partners-marquee">
                     <div class="partners-track">
                         <!-- Group 1 -->
@@ -309,21 +318,21 @@
         <section id="dual" class="section dual-section reveal">
             <div class="container">
                 <div class="text-center">
-                    <h2 style="color: #FFF;">ДУАЛДЫҚ ОҚЫТУ</h2>
-                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 60px;">Кәсіпорындар мен колледждер арасындағы
-                        тығыз ынтымақтастық.</p>
+                    <h2 style="color: #FFF;" data-i18n="dual.title">ДУАЛДЫҚ ОҚЫТУ</h2>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 60px;" data-i18n="dual.subtitle">Кәсіпорындар
+                        мен колледждер арасындағы тығыз ынтымақтастық.</p>
                 </div>
 
                 <div class="grid-2">
                     <div class="card dual-card">
-                        <h3 style="color: var(--primary-red);">КӘСІПОРЫНДАР ҮШІН</h3>
-                        <p>Мамандарды өз қажеттілігіңізге қарай даярлау, қызметкерлерді таңдау шығындарын үнемдеу
-                            мүмкіндігі.</p>
+                        <h3 style="color: var(--primary-red);" data-i18n="dual.card1.title">КӘСІПОРЫНДАР ҮШІН</h3>
+                        <p data-i18n="dual.card1.text">Мамандарды өз қажеттілігіңізге қарай даярлау, қызметкерлерді
+                            таңдау шығындарын үнемдеу мүмкіндігі.</p>
                     </div>
                     <div class="card dual-card">
-                        <h3 style="color: var(--primary-red);">ТАЛАПКЕРЛЕР ҮШІН</h3>
-                        <p>Ерте тәуелсіздік пен ересек өмірге бейімделу. Оқу кезінде сыйақы алу және жұмысқа кепілдік
-                            орналасу.</p>
+                        <h3 style="color: var(--primary-red);" data-i18n="dual.card2.title">ТАЛАПКЕРЛЕР ҮШІН</h3>
+                        <p data-i18n="dual.card2.text">Ерте тәуелсіздік пен ересек өмірге бейімделу. Оқу кезінде сыйақы
+                            алу және жұмысқа кепілдік орналасу.</p>
                     </div>
                 </div>
             </div>
@@ -336,13 +345,14 @@
                     <img src="assets/images/banner_scool.png" alt="Urban School Banner" class="school-banner">
                 </div>
                 <div class="school-card">
-                    <h2>Мектепке қабылдау 5-9 сыныптар URBAN SCHOOL-ға ашылды!</h2>
+                    <h2 data-i18n="school.title">Мектепке қабылдау 5-9 сыныптар URBAN SCHOOL-ға ашылды!</h2>
                     <div class="accent-line"></div>
-                    <p>URBAN SCHOOL — білімнен көп нәрсе. Біз жаңа тәсілді қолдана отырып, білім беріп, сенімді,
-                        тәуелсіз және жауапкершілікті азаматтар тәрбиелейміз. Біздің бағдарламамыз шведтің кәсіпкерлікті
-                        қолдау моделіне негізделген Ung Företagsamhet, ол ерік-жігерді, сыни ойлауды және қаржылық
-                        сауаттылықты орталыққа қояды.</p>
-                    <a href="https://www.urban.edu.kz/" class="btn-school mt-32" target="_blank">Толығырақ білу</a>
+                    <p data-i18n="school.text">URBAN SCHOOL — білімнен көп нәрсе. Біз жаңа тәсілді қолдана отырып, білім
+                        беріп, сенімді, тәуелсіз және жауапкершілікті азаматтар тәрбиелейміз. Біздің бағдарламамыз
+                        шведтің кәсіпкерлікті қолдау моделіне негізделген Ung Företagsamhet, ол ерік-жігерді, сыни
+                        ойлауды және қаржылық сауаттылықты орталыққа қояды.</p>
+                    <a href="https://www.urban.edu.kz/" class="btn-school mt-32" target="_blank"
+                        data-i18n="school.btn">Толығырақ білу</a>
                 </div>
             </div>
         </section>
@@ -353,10 +363,10 @@
         <div class="footer-cta">
             <div class="container footer-cta-inner">
                 <div>
-                    <p class="footer-cta-label">Мемлекеттік аттестаттау</p>
-                    <h3>Барлық білім беру қызметі лицензияланған.</h3>
+                    <p class="footer-cta-label" data-i18n="footer.cta.label">Мемлекеттік аттестаттау</p>
+                    <h3 data-i18n="footer.cta.title">Барлық білім беру қызметі лицензияланған.</h3>
                 </div>
-                <a href="#form" class="btn-primary">Жазылу →</a>
+                <a href="#form" class="btn-primary" data-i18n="footer.cta.btn">Жазылу →</a>
             </div>
         </div>
 
@@ -366,7 +376,8 @@
                 <!-- Brand Column -->
                 <div class="footer-col">
                     <div class="logo-text footer-logo">URBAN<span>COLLEGE</span></div>
-                    <p class="footer-tagline">Күш қуат мекені. Сапалы білім — жарқын болашақ.</p>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Күш қуат мекені. Сапалы білім — жарқын болашақ.
+                    </p>
                     <div class="social-links">
                         <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
                         <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
@@ -377,21 +388,22 @@
 
                 <!-- Navigation -->
                 <div class="footer-col">
-                    <h4 class="footer-heading">Навигация</h4>
+                    <h4 class="footer-heading" data-i18n="footer.nav.title">Навигация</h4>
                     <ul class="footer-links">
-                        <li><a href="#about">Біз туралы</a></li>
-                        <li><a href="#timeline">Кезеңдер</a></li>
-                        <li><a href="#now">Қазіргі кезде</a></li>
-                        <li><a href="#dual">Дуалдық оқыту</a></li>
-                        <li><a href="#school">Urban School</a></li>
+                        <li><a href="#about" data-i18n="footer.nav.about">Біз туралы</a></li>
+                        <li><a href="#timeline" data-i18n="footer.nav.timeline">Кезеңдер</a></li>
+                        <li><a href="#now" data-i18n="footer.nav.now">Қазіргі кезде</a></li>
+                        <li><a href="#dual" data-i18n="footer.nav.dual">Дуалдық оқыту</a></li>
+                        <li><a href="#school" data-i18n="footer.nav.school">Urban School</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact -->
                 <div class="footer-col">
-                    <h4 class="footer-heading">Байланыс</h4>
+                    <h4 class="footer-heading" data-i18n="footer.contact.title">Байланыс</h4>
                     <ul class="footer-links">
-                        <li><i class='bx bx-map-pin'></i> Астана қаласы, Мәңгілік ел 123</li>
+                        <li><i class='bx bx-map-pin'></i> <span data-i18n="footer.address">Астана қаласы, Мәңгілік ел
+                                123</span></li>
                         <li><i class='bx bx-phone'></i> +7 (7172) 12-34-56</li>
                         <li><i class='bx bx-envelope'></i> info@urbancollege.kz</li>
                     </ul>
@@ -402,13 +414,15 @@
         <!-- Bottom Bar -->
         <div class="footer-bottom">
             <div class="container footer-bottom-inner">
-                <p>&copy; 2025 URBAN COLLEGE. Барлық құқықтар қорғалған.</p>
-                <p>Жасаған: <span style="color: var(--primary-red);">Urban College Team</span></p>
+                <p data-i18n="footer.copy">© 2025 URBAN COLLEGE. Барлық құқықтар қорғалған.</p>
+                <p><span data-i18n="footer.made">Жасаған:</span> <span style="color: var(--primary-red);">Urban College
+                        Team</span></p>
             </div>
         </div>
     </footer>
 
     <script src="main.js"></script>
+    <script src="i18n.js"></script>
 </body>
 
 </html>
