@@ -175,6 +175,93 @@ const translations = {
         'footer.cta.btn': 'Записаться →',
         'footer.copy': '© 2025 URBAN COLLEGE. Все права защищены.',
         'footer.made': 'Разработано:',
+    },
+
+    en: {
+        // Nav
+        'nav.about': 'About Us',
+        'nav.timeline': 'History',
+        'nav.dual': 'Dual Education',
+        'nav.partners': 'Partners',
+        'nav.school': 'Urban School',
+        'nav.cta': 'Young Applicant',
+
+        // Hero
+        'hero.title': 'A PLACE OF POWER & POTENTIAL',
+        'hero.subtitle': 'SKILLS YOU NEED FOR A FREE LIFE. Take a confident step into the future with us.',
+        'hero.contact': 'Contact Us',
+        'hero.more': 'Learn More',
+
+        // Form
+        'form.title': 'Book a Consultation',
+        'form.name.label': 'Your Name',
+        'form.name.placeholder': 'E.g.: John Smith',
+        'form.phone.label': 'Phone Number',
+        'form.region.label': 'Region',
+        'form.region.default': 'Select...',
+        'form.submit': 'Register',
+
+        // About
+        'about.title': 'ABOUT URBAN COLLEGE',
+        'about.text': 'Urban College is more than just a place of learning — it is a gateway to the future and a hub of new opportunities. We create all the conditions for the comprehensive development of our students.',
+        'about.mission.title': 'OUR MISSION',
+        'about.mission.text': 'Training qualified specialists with the knowledge and intellect necessary for the sustainable economic development of the country.',
+        'about.goals.title': 'OUR GOALS',
+        'about.goals.text': 'Creating conditions for education and professional growth through strategic partnerships with business.',
+
+        // Timeline
+        'tl.label': 'History',
+        'tl.title': 'KEY MILESTONES',
+        'tl.subtitle': 'Our college\'s journey — a history of real results and bold transformation.',
+        'tl.2005.label': 'FOUNDATION',
+        'tl.2005.title': 'Financial-Economic College Established',
+        'tl.2005.text': 'THE FINANCIAL-ECONOMIC COLLEGE WAS FOUNDED. A new institution was established, aimed at training highly qualified specialists to contribute to the country\'s economic development.',
+        'tl.2013.label': 'GROWTH',
+        'tl.2013.title': 'Engineering-Economic College',
+        'tl.2013.text': 'THE COLLEGE BECAME AN ENGINEERING-ECONOMIC INSTITUTION. During this period, over 1,850 specialists were trained in economics, utilities, and the hospitality industry.',
+        'tl.2022.label': 'TIME OF CHANGE',
+        'tl.2022.title': 'URBAN COLLEGE',
+        'tl.2022.text': 'THE COLLEGE WAS REBRANDED AS THE MODERN URBAN COLLEGE. A college open to innovation, close to modern life — today it continues its transformation.',
+
+        // Now
+        'now.label': 'PRESENT DAY',
+        'now.desc': 'A new pulse, new opportunities, a modern environment.',
+        'now.card1.title': 'Rebranding',
+        'now.card1.text': 'Administrative and teaching staff completely renewed — 100% update. The college adopted a brand-new vision and identity.',
+        'now.card2.title': 'Renovation Works',
+        'now.card2.text': 'Major renovation completed — our space is visually refreshed. Best possible conditions for our students.',
+
+        // Partners
+        'partners.title': 'OUR PARTNERS',
+
+        // Dual
+        'dual.title': 'DUAL EDUCATION',
+        'dual.subtitle': 'Close cooperation between enterprises and the college.',
+        'dual.card1.title': 'FOR BUSINESSES',
+        'dual.card1.text': 'Train specialists tailored to your needs and save on recruitment costs.',
+        'dual.card2.title': 'FOR STUDENTS',
+        'dual.card2.text': 'Early independence and adaptation to adult life. Earn a stipend while studying and receive guaranteed employment upon graduation.',
+
+        // School
+        'school.title': 'Enrollment Open for Grades 5–9 at URBAN SCHOOL!',
+        'school.text': 'URBAN SCHOOL is more than education. We use innovative approaches to nurture confident, independent, and responsible citizens. Our programme is based on the Swedish entrepreneurship model Ung Företagsamhet, placing willpower, critical thinking, and financial literacy at the core.',
+        'school.btn': 'Find Out More',
+
+        // Footer
+        'footer.tagline': 'A place of power. Quality education — a bright future.',
+        'footer.nav.title': 'Navigation',
+        'footer.nav.about': 'About Us',
+        'footer.nav.timeline': 'History',
+        'footer.nav.now': 'Present Day',
+        'footer.nav.dual': 'Dual Education',
+        'footer.nav.school': 'Urban School',
+        'footer.contact.title': 'Contact',
+        'footer.address': 'Astana, Mangilik El 123',
+        'footer.cta.label': 'State Accreditation',
+        'footer.cta.title': 'All educational services are fully licensed.',
+        'footer.cta.btn': 'Register →',
+        'footer.copy': '© 2025 URBAN COLLEGE. All rights reserved.',
+        'footer.made': 'Made by:',
     }
 };
 
@@ -227,13 +314,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     b.classList.toggle('active', b.dataset.lang === btn.dataset.lang && b.textContent.trim() === btn.textContent.trim());
                 });
 
-                // Apply translation (only ru is supported for now, others fallback to kk)
-                const targetLang = btn.dataset.lang === 'ru' ? 'ru' : 'kk';
+                // Apply translation
+                const validLangs = { 'ru': 'ru', 'en': 'en' };
+                const targetLang = validLangs[btn.dataset.lang] || 'kk';
                 applyLanguage(targetLang);
             });
         });
     });
 
     // Apply saved language on load
-    applyLanguage(saved === 'ru' ? 'ru' : 'kk');
+    const validLangs = ['ru', 'en', 'kk'];
+    applyLanguage(validLangs.includes(saved) ? saved : 'kk');
 });
