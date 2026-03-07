@@ -1137,6 +1137,7 @@ img {
 .mobile-menu .lang-pill {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    width: fit-content;
 }
 
 .mobile-menu .lang-pill-btn {
