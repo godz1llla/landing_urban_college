@@ -26,9 +26,11 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <button class="btn-primary d-desktop">Жазу тіркелге</button>
-                <div class="lang-switcher d-desktop">
-                    <span class="active">KAZ</span> | <span>РУС</span>
+                <button class="btn-yellow d-desktop">Жас талапкер</button>
+                <div class="lang-pill d-desktop">
+                    <button class="lang-pill-btn">РУС</button>
+                    <button class="lang-pill-btn">ENG</button>
+                    <button class="lang-pill-btn">TUR</button>
                 </div>
                 <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
                     <i class='bx bx-menu-alt-right'></i>
@@ -50,9 +52,11 @@
                 </ul>
             </nav>
             <div class="mobile-menu-actions">
-                <button class="btn-primary w-100">Жазу тіркелге</button>
-                <div class="lang-switcher mt-32">
-                    <span class="active">KAZ</span> | <span>РУС</span>
+                <button class="btn-yellow w-100">Жас талапкер</button>
+                <div class="lang-pill mt-32">
+                    <button class="lang-pill-btn">РУС</button>
+                    <button class="lang-pill-btn">ENG</button>
+                    <button class="lang-pill-btn">TUR</button>
                 </div>
             </div>
         </div>
@@ -256,6 +260,52 @@
             </div>
         </section>
 
+        <!-- Partners Section -->
+        <section id="partners" class="partners-section reveal">
+            <div class="container">
+                <h2 class="text-center mb-64">БІЗДІҢ СЕРІКТЕСТЕРІМІЗ</h2>
+                <div class="partners-marquee">
+                    <div class="partners-track">
+                        <!-- Group 1 -->
+                        <div class="partner-card">«Шаңырақ» Тұрғын үй секторларындағы басқару</div>
+                        <div class="partner-card">Қызмет субъектілерінің қауымдастығы</div>
+                        <div class="partner-card">Property Management Group</div>
+                        <div class="partner-card">BI Service басқарушы компаниясы</div>
+                        <div class="partner-card">A-Service Management (Думан)</div>
+                        <div class="partner-card">Ұлттық ғылыми онкологиялық орталық</div>
+                        <div class="partner-card">Astana Energy Systems</div>
+                        <div class="partner-card">Самұрық Холдинг 2030</div>
+                        <div class="partner-card">Ramada Hotel by Wyndham</div>
+                        <div class="partner-card">KAZGIG</div>
+                        <div class="partner-card">Optics Networks</div>
+                        <div class="partner-card">Ақмола электр торлық толық компаниясы (АЭТТ)</div>
+                        <div class="partner-card">Astana электротехникалық заводы</div>
+                        <div class="partner-card">Энергетиктер қауымдастығы</div>
+                        <div class="partner-card">Lynks Property Management</div>
+                        <div class="partner-card">Belgian Education Council</div>
+
+                        <!-- Duplicate for seamless loop -->
+                        <div class="partner-card">«Шаңырақ» Тұрғын үй секторларындағы басқару</div>
+                        <div class="partner-card">Қызмет субъектілерінің қауымдастығы</div>
+                        <div class="partner-card">Property Management Group</div>
+                        <div class="partner-card">BI Service басқарушы компаниясы</div>
+                        <div class="partner-card">A-Service Management (Думан)</div>
+                        <div class="partner-card">Ұлттық ғылыми онкологиялық орталық</div>
+                        <div class="partner-card">Astana Energy Systems</div>
+                        <div class="partner-card">Самұрық Холдинг 2030</div>
+                        <div class="partner-card">Ramada Hotel by Wyndham</div>
+                        <div class="partner-card">KAZGIG</div>
+                        <div class="partner-card">Optics Networks</div>
+                        <div class="partner-card">Ақмола электр торлық толық компаниясы (АЭТТ)</div>
+                        <div class="partner-card">Astana электротехникалық заводы</div>
+                        <div class="partner-card">Энергетиктер қауымдастығы</div>
+                        <div class="partner-card">Lynks Property Management</div>
+                        <div class="partner-card">Belgian Education Council</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="dual" class="section dual-section reveal">
             <div class="container">
                 <div class="text-center">
@@ -279,19 +329,6 @@
             </div>
         </section>
 
-        <section id="partners" class="section reveal">
-            <div class="container">
-                <div class="text-center mb-40">
-                    <h2 class="section-title">БІЗДІҢ СЕРІКТЕСТЕРІМІЗ</h2>
-                </div>
-                <div class="partners-grid">
-                    <div class="partner-logo"><i class='bx bxl-google-cloud'></i> Cloud Partner</div>
-                    <div class="partner-logo"><i class='bx bxl-visa'></i> Visa Global</div>
-                    <div class="partner-logo"><i class='bx bxl-dropbox'></i> Data Storage</div>
-                    <div class="partner-logo"><i class='bx bxl-stripe'></i> Fintech Corp</div>
-                </div>
-            </div>
-        </section>
 
         <section id="school" class="section school-section reveal">
             <div class="container school-container">
@@ -303,9 +340,9 @@
                     <div class="accent-line"></div>
                     <p>URBAN SCHOOL — білімнен көп нәрсе. Біз жаңа тәсілді қолдана отырып, білім беріп, сенімді,
                         тәуелсіз және жауапкершілікті азаматтар тәрбиелейміз. Біздің бағдарламамыз шведтің кәсіпкерлікті
-                        қолдау моделіне негізделген <strong>Ung Företagsamhet</strong>, ол ерік-жігерді, сыни ойлауды
-                        және қаржылық сауаттылықты орталыққа қояды.</p>
-                    <a href="#" class="btn-school mt-32">Толығырақ білу</a>
+                        қолдау моделіне негізделген Ung Företagsamhet, ол ерік-жігерді, сыни ойлауды және қаржылық
+                        сауаттылықты орталыққа қояды.</p>
+                    <a href="https://www.urban.edu.kz/" class="btn-school mt-32" target="_blank">Толығырақ білу</a>
                 </div>
             </div>
         </section>

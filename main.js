@@ -91,14 +91,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1500);
     });
 
-    // Language Toggle
-    const langSwitchers = document.querySelectorAll('.lang-switcher');
-    langSwitchers.forEach(sw => {
-        sw.addEventListener('click', (e) => {
-            if (e.target.tagName === 'SPAN') {
-                sw.querySelectorAll('span').forEach(s => s.classList.remove('active'));
-                e.target.classList.add('active');
-            }
+    // Language Toggle (Pill)
+    const langPills = document.querySelectorAll('.lang-pill');
+    langPills.forEach(pill => {
+        const btns = pill.querySelectorAll('.lang-pill-btn');
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
         });
     });
 
