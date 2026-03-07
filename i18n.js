@@ -262,6 +262,83 @@ const translations = {
         'footer.cta.btn': 'Register →',
         'footer.copy': '© 2025 URBAN COLLEGE. All rights reserved.',
         'footer.made': 'Made by:',
+    },
+
+    tr: {
+        'nav.about': 'Hakkımızda',
+        'nav.timeline': 'Tarihçe',
+        'nav.dual': 'Çift Yönlü Eğitim',
+        'nav.partners': 'Ortaklar',
+        'nav.school': 'Urban School',
+        'nav.cta': 'Genç Aday',
+
+        'hero.title': 'GÜÇ VE FIRSATLAR MERKEZİ',
+        'hero.subtitle': 'ÖZGÜR BİR YAŞAM İÇİN GEREKLİ BECERİLER. Geleceğe emin adımlarla bizimle yürüyün.',
+        'hero.contact': 'Bize Ulaşın',
+        'hero.more': 'Daha Fazla',
+
+        'form.title': 'Danışma Randevusu Al',
+        'form.name.label': 'Adınız',
+        'form.name.placeholder': 'Örn: Ahmet Yılmaz',
+        'form.phone.label': 'Telefon Numarası',
+        'form.region.label': 'Bölge',
+        'form.region.default': 'Seçiniz',
+        'form.submit': 'Kayıt Ol',
+
+        'about.title': 'URBAN COLLEGE HAKKINDA',
+        'about.text': 'Urban College, yalnızca bir eğitim kurumu değil — geleceğe açılan bir kapı ve yeni fırsatların merkezi. Öğrencilerimizin kapsamlı gelişimi için her türlü ortamı sağlıyoruz.',
+        'about.mission.title': 'MİSYONUMUZ',
+        'about.mission.text': 'Ülkenin sürdürülebilir ekonomik kalkınması için bilgi ve zeka sahibi nitelikli uzmanlar yetiştirmek.',
+        'about.goals.title': 'HEDEFLERİMİZ',
+        'about.goals.text': 'İş dünyasıyla stratejik ortaklıklar aracılığıyla eğitim ve mesleki büyüme için koşullar oluşturmak.',
+
+        'tl.label': 'Tarihçe',
+        'tl.title': 'ÖNEMLİ AŞAMALAR',
+        'tl.subtitle': 'Kolejimizin gelişim yolculuğu — gerçek sonuçlar ve cesur dönüşümlerin tarihi.',
+        'tl.2005.label': 'KURULUŞ',
+        'tl.2005.title': 'Finans-Ekonomi Kolejinin Temeli Atıldı',
+        'tl.2005.text': 'FİNANS-EKONOMİ KOLEJİNİN TEMELİ ATILDI. Ülkenin ekonomik kalkınmasına katkı sağlayacak nitelikli uzmanlar yetiştirmeye odaklanan yeni bir eğitim kurumu kuruldu.',
+        'tl.2013.label': 'GELİŞİM',
+        'tl.2013.title': 'Mühendislik-Ekonomi Koleji',
+        'tl.2013.text': 'KOLEJ MÜHENDİSLİK-EKONOMİ KOLEJİ OLDU. Bu dönemde ekonomi, kamu hizmetleri ve otelcilik alanlarında 1.850 uzman yetiştirildi.',
+        'tl.2022.label': 'DÖNÜŞÜM ZAMANI',
+        'tl.2022.title': 'URBAN COLLEGE',
+        'tl.2022.text': 'KOLEJ MODERN URBAN COLLEGE OLARAK YENİDEN MARKALANDI. Yeniliğe açık, modern yaşama yakın bir kolej — bugün dönüşümünü sürdürüyor.',
+
+        'now.label': 'GÜNÜMÜZDE',
+        'now.desc': 'Yeni ivme, yeni fırsatlar, modern ortam.',
+        'now.card1.title': 'Yeniden Markalama',
+        'now.card1.text': 'İdari ve öğretim kadrosu %100 yenilendi. Kolej tamamen yeni bir vizyon ve kimlik kazandı.',
+        'now.card2.title': 'Tadilat Çalışmaları',
+        'now.card2.text': 'Kapsamlı tadilat tamamlandı, ortam görsel olarak yenilendi. Öğrenciler için en iyi koşullar.',
+
+        'partners.title': 'ORTAKLARIMIZ',
+
+        'dual.title': 'ÇİFT YÖNLÜ EĞİTİM',
+        'dual.subtitle': 'İşletmeler ile kolej arasındaki yakın iş birliği.',
+        'dual.card1.title': 'İŞLETMELER İÇİN',
+        'dual.card1.text': 'İhtiyaçlarınıza özel uzmanlar yetiştirin ve işe alım maliyetlerinden tasarruf edin.',
+        'dual.card2.title': 'ADAYLAR İÇİN',
+        'dual.card2.text': 'Erken bağımsızlık ve yetişkin hayatına uyum. Eğitim boyunca burs alın ve mezun olunca iş garantisi kazanın.',
+
+        'school.title': 'URBAN SCHOOL 5–9. Sınıflar İçin Kayıtlar Açıldı!',
+        'school.text': 'URBAN SCHOOL eğitimden fazlasıdır. Yenilikçi yaklaşımlarla güvenli, bağımsız ve sorumlu bireyler yetiştiriyoruz. Programımız, irade gücünü, eleştirel düşünceyi ve finansal okuryazarlığı merkeze alan İsveç girişimcilik modeli Ung Företagsamhet\'e dayanmaktadır.',
+        'school.btn': 'Daha Fazla Bilgi',
+
+        'footer.tagline': 'Güç merkezi. Kaliteli eğitim — parlak bir gelecek.',
+        'footer.nav.title': 'Navigasyon',
+        'footer.nav.about': 'Hakkımızda',
+        'footer.nav.timeline': 'Tarihçe',
+        'footer.nav.now': 'Günümüzde',
+        'footer.nav.dual': 'Çift Yönlü Eğitim',
+        'footer.nav.school': 'Urban School',
+        'footer.contact.title': 'İletişim',
+        'footer.address': 'Astana, Mäŋgilik El 123',
+        'footer.cta.label': 'Devlet Akreditasyonu',
+        'footer.cta.title': 'Tüm eğitim hizmetleri lisanslıdır.',
+        'footer.cta.btn': 'Kayıt Ol →',
+        'footer.copy': '© 2025 URBAN COLLEGE. Tüm hakları saklıdır.',
+        'footer.made': 'Geliştiren:',
     }
 };
 
@@ -300,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pill.querySelectorAll('.lang-pill-btn').forEach(btn => {
             // Determine which language this button represents
             const label = btn.textContent.trim().toLowerCase();
-            const langMap = { 'рус': 'ru', 'eng': 'en', 'tur': 'tr' };
+            const langMap = { 'kaz': 'kk', 'рус': 'ru', 'eng': 'en', 'tur': 'tr' };
             btn.dataset.lang = langMap[label] || label;
 
             // Apply saved active state
@@ -315,7 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 // Apply translation
-                const validLangs = { 'ru': 'ru', 'en': 'en' };
+                const validLangs = { 'ru': 'ru', 'en': 'en', 'tr': 'tr' };
                 const targetLang = validLangs[btn.dataset.lang] || 'kk';
                 applyLanguage(targetLang);
             });
@@ -323,6 +400,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Apply saved language on load
-    const validLangs = ['ru', 'en', 'kk'];
+    const validLangs = ['ru', 'en', 'tr', 'kk'];
     applyLanguage(validLangs.includes(saved) ? saved : 'kk');
 });
