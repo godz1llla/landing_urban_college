@@ -140,4 +140,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', onTimelineScroll, { passive: true });
     onTimelineScroll();
+
+    // Professions Accordion (List Style)
+    const progRows = document.querySelectorAll('.prog-row');
+    progRows.forEach(row => {
+        row.querySelector('.prog-row-header').addEventListener('click', () => {
+            row.classList.toggle('expanded');
+        });
+    });
 });

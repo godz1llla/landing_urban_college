@@ -60,7 +60,9 @@ const translations = {
         'partners.title': 'БІЗДІҢ СЕРІКТЕСТЕРІМІЗ',
 
         // Educational Programs (Professions)
-        'progs.title': 'БІЛІМ БЕРУ БАҒДАРЛАМАЛАРЫ',
+        'progs.title': 'БІЗДІҢ МАМАНДЫҚТАРЫМЫЗ',
+        'progs.more': 'Толығырақ',
+        'progs.less': 'Жасыру',
         'progs.qual.label': 'БІЛІКТІЛІК:',
         'progs.p1.code': '06130100',
         'progs.p1.name': 'Бағдарламалық қамтамасыз ету (түрлері бойынша)',
@@ -175,7 +177,9 @@ const translations = {
         'partners.title': 'НАШИ ПАРТНЁРЫ',
 
         // Educational Programs (Professions)
-        'progs.title': 'ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ',
+        'progs.title': 'НАШИ СПЕЦИАЛЬНОСТИ',
+        'progs.more': 'Подробнее',
+        'progs.less': 'Скрыть',
         'progs.qual.label': 'КВАЛИФИКАЦИЯ:',
         'progs.p1.code': '06130100',
         'progs.p1.name': 'Программное обеспечение (по видам)',
@@ -290,7 +294,9 @@ const translations = {
         'partners.title': 'OUR PARTNERS',
 
         // Educational Programs (Professions)
-        'progs.title': 'EDUCATIONAL PROGRAMS',
+        'progs.title': 'OUR SPECIALTIES',
+        'progs.more': 'View Details',
+        'progs.less': 'Close',
         'progs.qual.label': 'QUALIFICATION:',
         'progs.p1.code': '06130100',
         'progs.p1.name': 'Software Engineering (by types)',
@@ -399,7 +405,9 @@ const translations = {
         'partners.title': 'ORTAKLARIMIZ',
 
         // Educational Programs (Professions)
-        'progs.title': 'EĞİTİM PROGRAMLARI',
+        'progs.title': 'UZMANLIK ALANLARIMIZ',
+        'progs.more': 'Daha Fazla',
+        'progs.less': 'Kapat',
         'progs.qual.label': 'YETERLİLİK:',
         'progs.p1.code': '06130100',
         'progs.p1.name': 'Yazılım Mühendisliği (tүрлер бойынша)',
