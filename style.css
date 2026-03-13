@@ -555,44 +555,71 @@ img {
     }
 }
 
-.lead-card {
-    max-width: 600px;
-    margin: 0 auto;
-    background: var(--card-bg);
-    border-radius: var(--radius-lg);
-    padding: 60px;
-    box-shadow: var(--shadow-lg);
-}
-
-.form-group {
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.form-group label {
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: var(--primary-black);
-}
-
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 20px;
-    border: 1.5px solid #eee;
-    border-radius: 12px;
-    font-family: inherit;
-    font-size: 16px;
-    transition: 0.3s;
+/* Facts Section */
+.facts-section {
     background: #fdfdfd;
+    padding: 100px 0;
 }
 
-.form-group input:focus {
-    border-color: var(--primary-red);
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(225, 37, 83, 0.1);
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.fact-card {
+    background: var(--card-bg);
+    padding: 48px 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.fact-card:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(225, 37, 83, 0.1);
+}
+
+.fact-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(225, 37, 83, 0.08);
+    border-radius: 16px;
+    color: var(--primary-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.fact-card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--primary-black);
+    letter-spacing: -0.5px;
+}
+
+.fact-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fact-card {
+        padding: 40px 32px;
+    }
 }
 
 /* =========================================

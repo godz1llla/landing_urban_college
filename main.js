@@ -74,22 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleHeader, { passive: true });
     handleHeader();
 
-    // Lead Form Submission
-    leadForm?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const btn = leadForm.querySelector('button');
-        const originalText = btn.textContent;
 
-        btn.disabled = true;
-        btn.textContent = 'Жіберілуде...';
-
-        setTimeout(() => {
-            alert('Рақмет! Сіздің өтінішіңіз сәтті қабылданды. Біз сізбен жақын арада хабарласамыз.');
-            leadForm.reset();
-            btn.disabled = false;
-            btn.textContent = originalText;
-        }, 1500);
-    });
 
     // Language Toggle (Pill)
     const langPills = document.querySelectorAll('.lang-pill');

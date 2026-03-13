@@ -18,14 +18,18 @@ const translations = {
         'hero.contact': 'Байланысқа шығу',
         'hero.more': 'Толығырақ',
 
-        // Form
-        'form.title': 'Консультацияға жазылу',
-        'form.name.label': 'Аты-жөніңіз',
-        'form.name.placeholder': 'Мысалы: Арман Серікұлы',
-        'form.phone.label': 'Телефон нөмірі',
-        'form.region.label': 'Облыс/өңір',
-        'form.region.default': 'Таңдаңыз',
-        'form.submit': 'Тіркелу',
+        // Facts
+        'facts.title': 'БІЗ ТУРАЛЫ МАҢЫЗДЫ НЕ БІЛУ КЕРЕК',
+        'facts.item1.title': '17 жыл',
+        'facts.item1.text': 'Колледжіміздің білім беру саласындағы көпжылдық тәжірибесі.',
+        'facts.item2.title': '2 жыл 10 ай',
+        'facts.item2.text': 'Оқудың оңтайлы мерзімі — мамандықты тез әрі сапалы меңгеру.',
+        'facts.item3.title': 'Жұмыс кепілдігі',
+        'facts.item3.text': 'Үздік түлектердің жұмысқа орналасуы жүз пайыз кепілдендірілген.',
+        'facts.item4.title': 'Грант және коммерция',
+        'facts.item4.text': 'Мемлекеттік гранттар немесе ақылы негізде оқу мүмкіндігі.',
+        'facts.item5.title': 'Меншікті ғимарат',
+        'facts.item5.text': 'Оқу ғимараты, зертханалар, кітапхана, асхана және жатақхана.',
 
         // About
         'about.title': 'НЕГІЗГІ URBAN COLLEGE ТУРАЛЫ',
@@ -105,14 +109,18 @@ const translations = {
         'hero.contact': 'Связаться с нами',
         'hero.more': 'Подробнее',
 
-        // Form
-        'form.title': 'Записаться на консультацию',
-        'form.name.label': 'Ваше имя',
-        'form.name.placeholder': 'Например: Иван Иванов',
-        'form.phone.label': 'Номер телефона',
-        'form.region.label': 'Регион',
-        'form.region.default': 'Выберите',
-        'form.submit': 'Зарегистрироваться',
+        // Facts
+        'facts.title': 'ЧТО ВАЖНО ЗНАТЬ О НАС',
+        'facts.item1.title': '17 лет',
+        'facts.item1.text': 'Многолетний опыт нашего колледжа в сфере образования.',
+        'facts.item2.title': '2 года 10 месяцев',
+        'facts.item2.text': 'Оптимальный срок обучения для быстрого и качественного освоения профессии.',
+        'facts.item3.title': 'Гарантия работы',
+        'facts.item3.text': 'Трудоустройство лучших выпускников гарантировано на сто процентов.',
+        'facts.item4.title': 'Грант и коммерция',
+        'facts.item4.text': 'Возможность обучения по государственным грантам или на платной основе.',
+        'facts.item5.title': 'Собственное здание',
+        'facts.item5.text': 'Учебный корпус, лаборатории, библиотека, столовая и общежитие.',
 
         // About
         'about.title': 'ОБ URBAN COLLEGE',
@@ -192,18 +200,22 @@ const translations = {
         'hero.contact': 'Contact Us',
         'hero.more': 'Learn More',
 
-        // Form
-        'form.title': 'Book a Consultation',
-        'form.name.label': 'Your Name',
-        'form.name.placeholder': 'E.g.: John Smith',
-        'form.phone.label': 'Phone Number',
-        'form.region.label': 'Region',
-        'form.region.default': 'Select...',
-        'form.submit': 'Register',
+        // Facts
+        'facts.title': 'IMPORTANT FACTS ABOUT US',
+        'facts.item1.title': '17 Years',
+        'facts.item1.text': 'Long-term experience in the field of professional education.',
+        'facts.item2.title': '2 Years 10 Months',
+        'facts.item2.text': 'Optimal study duration for fast and effective professional growth.',
+        'facts.item3.title': 'Job Guarantee',
+        'facts.item3.text': 'Guaranteed employment for top-performing graduates.',
+        'facts.item4.title': 'Grant & Commercial',
+        'facts.item4.text': 'Education available through state grants or private financing.',
+        'facts.item5.title': 'Own Campus',
+        'facts.item5.text': 'Academic buildings, labs, library, canteen, and dormitory.',
 
         // About
         'about.title': 'ABOUT URBAN COLLEGE',
-        'about.text': 'Urban College is more than just a place of learning — it is a gateway to the future and a hub of new opportunities. We create all the conditions for the comprehensive development of our students.',
+        'about.text': 'Urban College — is more than just a place of learning — it is a gateway to the future and a hub of new opportunities. We create all the conditions for the comprehensive development of our students.',
         'about.mission.title': 'OUR MISSION',
         'about.mission.text': 'Training qualified specialists with the knowledge and intellect necessary for the sustainable economic development of the country.',
         'about.goals.title': 'OUR GOALS',
@@ -277,13 +289,18 @@ const translations = {
         'hero.contact': 'Bize Ulaşın',
         'hero.more': 'Daha Fazla',
 
-        'form.title': 'Danışma Randevusu Al',
-        'form.name.label': 'Adınız',
-        'form.name.placeholder': 'Örn: Ahmet Yılmaz',
-        'form.phone.label': 'Telefon Numarası',
-        'form.region.label': 'Bölge',
-        'form.region.default': 'Seçiniz',
-        'form.submit': 'Kayıt Ol',
+        // Facts
+        'facts.title': 'HAKKIMIZDA BİLMENİZ GEREKENLER',
+        'facts.item1.title': '17 Yıl',
+        'facts.item1.text': 'Mesleki eğitim alanındaki köklü ve uzun süreli deneyimimiz.',
+        'facts.item2.title': '2 Yıl 10 Ay',
+        'facts.item2.text': 'Hızlı ve etkili mesleki gelişim için en uygun eğitim süresi.',
+        'facts.item3.title': 'İş Garantisi',
+        'facts.item3.text': 'Başarılı mezunlar için %100 işe yerleştirme garantisi.',
+        'facts.item4.title': 'Burs ve Ücretli',
+        'facts.item4.text': 'Devlet bursları ile veya ücretli eğitim alma imkanı.',
+        'facts.item5.title': 'Kendi Kampüsümüz',
+        'facts.item5.text': 'Eğitim binaları, laboratuvarlar, kütüphane, yemekhane ve yurt.',
 
         'about.title': 'URBAN COLLEGE HAKKINDA',
         'about.text': 'Urban College, yalnızca bir eğitim kurumu değil — geleceğe açılan bir kapı ve yeni fırsatların merkezi. Öğrencilerimizin kapsamlı gelişimi için her türlü ortamı sağlıyoruz.',
