@@ -9,7 +9,7 @@ const translations = {
         'nav.timeline': 'Кезеңдер',
         'nav.dual': 'Дуалдық оқыту',
         'nav.partners': 'Серіктестер',
-        'nav.school': 'Urban School',
+        'nav.enactus': 'Enactus',
         'nav.cta': 'Жас талапкер',
 
         // Hero
@@ -68,10 +68,10 @@ const translations = {
         'dual.card2.title': 'ТАЛАПКЕРЛЕР ҮШІН',
         'dual.card2.text': 'Ерте тәуелсіздік пен ересек өмірге бейімделу. Оқу кезінде сыйақы алу және жұмысқа кепілдік орналасу.',
 
-        // School
-        'school.title': 'Мектепке қабылдау 5-9 сыныптар URBAN SCHOOL-ға ашылды!',
-        'school.text': 'URBAN SCHOOL — білімнен көп нәрсе. Біз жаңа тәсілді қолдана отырып, білім беріп, сенімді, тәуелсіз және жауапкершілікті азаматтар тәрбиелейміз. Біздің бағдарламамыз шведтің кәсіпкерлікті қолдау моделіне негізделген Ung Företagsamhet, ол ерік-жігерді, сыни ойлауды және қаржылық сауаттылықты орталыққа қояды.',
-        'school.btn': 'Толығырақ білу',
+        // Enactus
+        'enactus.title': 'ENACTUS URBAN COLLEGE КОМАНДАСЫНА ҚОСЫЛ!',
+        'enactus.text': 'Жай ғана студент болу аз ба?Сенің өзгерістер уақытың келді!\nӘлемді өзгерткің келе ме, әлде тек бақылаушы болып қалғың келе ме?\nӨз идеяңды іске асырып, нақты нәтиже көргің келе ме?\nОнда бұл мүмкіндік — дәл сен үшін!\nEnactus Urban College жаңа буын көшбасшыларын іздейді.',
+        'enactus.btn': 'Толығырақ білу',
 
         // Footer
         'footer.tagline': 'Күш қуат мекені. Сапалы білім — жарқын болашақ.',
@@ -80,7 +80,7 @@ const translations = {
         'footer.nav.timeline': 'Кезеңдер',
         'footer.nav.now': 'Қазіргі кезде',
         'footer.nav.dual': 'Дуалдық оқыту',
-        'footer.nav.school': 'Urban School',
+        'footer.nav.enactus': 'Enactus',
         'footer.contact.title': 'Байланыс',
         'footer.address': 'Астана қаласы, Мәңгілік ел 123',
         'footer.cta.label': 'Мемлекеттік аттестаттау',
@@ -96,7 +96,7 @@ const translations = {
         'nav.timeline': 'История',
         'nav.dual': 'Дуальное обучение',
         'nav.partners': 'Партнёры',
-        'nav.school': 'Urban School',
+        'nav.enactus': 'Enactus',
         'nav.cta': 'Молодой абитуриент',
 
         // Hero
@@ -155,10 +155,10 @@ const translations = {
         'dual.card2.title': 'ДЛЯ АБИТУРИЕНТОВ',
         'dual.card2.text': 'Ранняя самостоятельность и адаптация к взрослой жизни. Стипендия в период обучения и гарантированное трудоустройство.',
 
-        // School
-        'school.title': 'Приём в 5–9 классы URBAN SCHOOL открыт!',
-        'school.text': 'URBAN SCHOOL — это больше, чем образование. Мы используем новые подходы для воспитания уверенных, независимых и ответственных граждан. Наша программа основана на шведской модели поддержки предпринимательства Ung Företagsamhet, ставящей в центр силу воли, критическое мышление и финансовую грамотность.',
-        'school.btn': 'Узнать подробнее',
+        // Enactus
+        'enactus.title': 'ПРИСОЕДИНЯЙСЯ К КОМАНДЕ ENACTUS URBAN COLLEGE!',
+        'enactus.text': 'Мало быть просто студентом? Твое время перемен настало!\nХочешь менять мир или оставаться лишь наблюдателем?\nХочешь реализовать свои идеи и увидеть реальный результат?\nТогда эта возможность — именно для тебя!\nEnactus Urban College ищет лидеров нового поколения.',
+        'enactus.btn': 'Узнать подробнее',
 
         // Footer
         'footer.tagline': 'Место силы. Качественное образование — светлое будущее.',
@@ -167,7 +167,7 @@ const translations = {
         'footer.nav.timeline': 'История',
         'footer.nav.now': 'В настоящее время',
         'footer.nav.dual': 'Дуальное обучение',
-        'footer.nav.school': 'Urban School',
+        'footer.nav.enactus': 'Enactus',
         'footer.contact.title': 'Контакты',
         'footer.address': 'г. Астана, Мәңгілік ел 123',
         'footer.cta.label': 'Государственная аттестация',
@@ -183,7 +183,7 @@ const translations = {
         'nav.timeline': 'History',
         'nav.dual': 'Dual Education',
         'nav.partners': 'Partners',
-        'nav.school': 'Urban School',
+        'nav.enactus': 'Enactus',
         'nav.cta': 'Young Applicant',
 
         // Hero
@@ -242,10 +242,10 @@ const translations = {
         'dual.card2.title': 'FOR STUDENTS',
         'dual.card2.text': 'Early independence and adaptation to adult life. Earn a stipend while studying and receive guaranteed employment upon graduation.',
 
-        // School
-        'school.title': 'Enrollment Open for Grades 5–9 at URBAN SCHOOL!',
-        'school.text': 'URBAN SCHOOL is more than education. We use innovative approaches to nurture confident, independent, and responsible citizens. Our programme is based on the Swedish entrepreneurship model Ung Företagsamhet, placing willpower, critical thinking, and financial literacy at the core.',
-        'school.btn': 'Find Out More',
+        // Enactus
+        'enactus.title': 'JOIN THE ENACTUS URBAN COLLEGE TEAM!',
+        'enactus.text': 'Is being just a student not enough? Your time for change has come!\nDo you want to change the world or just remain an observer?\nDo you want to realize your ideas and see real results?\nThen this opportunity is just for you!\nEnactus Urban College is looking for the next generation of leaders.',
+        'enactus.btn': 'Learn More',
 
         // Footer
         'footer.tagline': 'A place of power. Quality education — a bright future.',
@@ -254,7 +254,7 @@ const translations = {
         'footer.nav.timeline': 'History',
         'footer.nav.now': 'Present Day',
         'footer.nav.dual': 'Dual Education',
-        'footer.nav.school': 'Urban School',
+        'footer.nav.enactus': 'Enactus',
         'footer.contact.title': 'Contact',
         'footer.address': 'Astana, Mangilik El 123',
         'footer.cta.label': 'State Accreditation',
@@ -269,7 +269,7 @@ const translations = {
         'nav.timeline': 'Tarihçe',
         'nav.dual': 'Çift Yönlü Eğitim',
         'nav.partners': 'Ortaklar',
-        'nav.school': 'Urban School',
+        'nav.enactus': 'Enactus',
         'nav.cta': 'Genç Aday',
 
         'hero.title': 'GÜÇ VE FIRSATLAR MERKEZİ',
@@ -319,11 +319,11 @@ const translations = {
         'dual.card1.title': 'İŞLETMELER İÇİN',
         'dual.card1.text': 'İhtiyaçlarınıza özel uzmanlar yetiştirin ve işe alım maliyetlerinden tasarruf edin.',
         'dual.card2.title': 'ADAYLAR İÇİN',
-        'dual.card2.text': 'Erken bağımsızlık ve yetişkin hayatına uyum. Eğitim boyunca burs alın ve mezun olunca iş garantisi kazanın.',
-
-        'school.title': 'URBAN SCHOOL 5–9. Sınıflar İçin Kayıtlar Açıldı!',
-        'school.text': 'URBAN SCHOOL eğitimden fazlasıdır. Yenilikçi yaklaşımlarla güvenli, bağımsız ve sorumlu bireyler yetiştiriyoruz. Programımız, irade gücünü, eleştirel düşünceyi ve finansal okuryazarlığı merkeze alan İsveç girişimcilik modeli Ung Företagsamhet\'e dayanmaktadır.',
-        'school.btn': 'Daha Fazla Bilgi',
+        'dual.card2.text': 'Erken bağımsızlık ve yetişkin hayatına uyum. Eğitim boyunca burs alın ve mezun olunca iş garantisi',
+        // Enactus
+        'enactus.title': 'ENACTUS URBAN COLLEGE EKİBİNE KATIL!',
+        'enactus.text': 'Sadece bir öğrenci olmak yetmiyor mu? Değişim zamanın geldi!\nDünyayı değiştirmek mi istiyorsun yoksa sadece bir gözlemci olarak mı kalmak?\nFikirlerini hayata geçirip gerçek sonuçlar görmek mi istiyorsun?\nO zaman bu fırsat tam senin için!\nEnactus Urban College, yeni nesil liderlerini arıyor.',
+        'enactus.btn': 'Daha Fazla Bilgi',
 
         'footer.tagline': 'Güç merkezi. Kaliteli eğitim — parlak bir gelecek.',
         'footer.nav.title': 'Navigasyon',
@@ -331,7 +331,7 @@ const translations = {
         'footer.nav.timeline': 'Tarihçe',
         'footer.nav.now': 'Günümüzde',
         'footer.nav.dual': 'Çift Yönlü Eğitim',
-        'footer.nav.school': 'Urban School',
+        'footer.nav.enactus': 'Enactus',
         'footer.contact.title': 'İletişim',
         'footer.address': 'Astana, Mäŋgilik El 123',
         'footer.cta.label': 'Devlet Akreditasyonu',

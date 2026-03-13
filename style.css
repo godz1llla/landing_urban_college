@@ -453,35 +453,35 @@ img {
 }
 
 /* =========================================
-   Urban School Section - Full Layout
+   Enactus Section - Recruitment Layout
    ========================================= */
-.school-section {
+.enactus-section {
     background: #EFEFEF;
     padding: 80px 0;
 }
 
-.school-container {
+.enactus-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0;
 }
 
-.school-visual {
+.enactus-visual {
     flex: 0 0 45%;
     max-width: 45%;
     position: relative;
     z-index: 1;
 }
 
-.school-banner {
+.enactus-banner {
     width: 100%;
     display: block;
     border-radius: var(--radius-sm);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
-.school-card {
+.enactus-card {
     flex: 0 0 58%;
     max-width: 58%;
     background: #F8F8F8;
@@ -493,7 +493,7 @@ img {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
-.school-card h2 {
+.enactus-card h2 {
     color: var(--primary-black);
     font-size: clamp(26px, 3vw, 40px);
     line-height: 1.2;
@@ -510,14 +510,15 @@ img {
     border-radius: 2px;
 }
 
-.school-card p {
+.enactus-card p,
+.enactus-description {
     color: #555;
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 0;
 }
 
-.btn-school {
+.btn-enactus {
     display: inline-block;
     background: #F39C12;
     color: #fff;
@@ -530,25 +531,25 @@ img {
     text-decoration: none;
 }
 
-.btn-school:hover {
+.btn-enactus:hover {
     background: #E67E22;
     transform: translateY(-3px);
     box-shadow: 0 10px 24px rgba(230, 126, 34, 0.35);
 }
 
 @media (max-width: 900px) {
-    .school-container {
+    .enactus-container {
         flex-direction: column;
     }
 
-    .school-visual,
-    .school-card {
+    .enactus-visual,
+    .enactus-card {
         flex: 0 0 100%;
         max-width: 100%;
         margin-left: 0;
     }
 
-    .school-card {
+    .enactus-card {
         padding: 40px 32px;
         margin-top: -20px;
     }
