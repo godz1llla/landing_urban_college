@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="kk" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ═══ Primary SEO ═══ -->
+    <title data-i18n="adm.title">ҚҰЖАТ ТАПСЫРУ ҮЛГІСІ ТУРАЛЫ | URBAN COLLEGE</title>
+    <meta name="description"
+        content="Urban College-ке құжат тапсыру тәртібі мен қажетті құжаттар тізімі. 2026-2027 оқу жылына қабылдау.">
+
+    <!-- ═══ Assets ═══ -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/avatar_02.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body {
+            background-color: #0c1222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .admission-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, rgba(12, 18, 34, 1) 100%),
+                radial-gradient(circle at 50% -20%, rgba(225, 37, 83, 0.2) 0%, transparent 70%);
+            text-align: center;
+        }
+
+        .admission-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 100px;
+        }
+
+        .adm-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 32px;
+            padding: 60px;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+        }
+
+        .adm-header h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            margin-bottom: 24px;
+            color: #fff;
+            line-height: 1.1;
+        }
+
+        .adm-subtitle {
+            font-size: 18px;
+            color: var(--primary-red);
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .adm-section {
+            margin-bottom: 56px;
+        }
+
+        .adm-section-title {
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        .adm-section-title i {
+            color: var(--primary-red);
+            font-size: 28px;
+            background: rgba(225, 37, 83, 0.1);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+
+        .docs-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 12px;
+        }
+
+        .docs-list li {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 24px 28px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .docs-list li:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--primary-red);
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .docs-list li::before {
+            content: '\eb7a';
+            /* Boxicons check */
+            font-family: 'boxicons';
+            color: var(--primary-red);
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        .adm-note {
+            background: rgba(225, 37, 83, 0.08);
+            padding: 28px;
+            border-radius: 16px;
+            border-left: 6px solid var(--primary-red);
+            font-size: 15px;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 56px;
+            font-weight: 500;
+        }
+
+        .methods-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .method-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .method-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .method-card h3 {
+            font-size: 19px;
+            margin-bottom: 16px;
+            color: #fff;
+            font-weight: 800;
+        }
+
+        .method-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 28px;
+        }
+
+        .method-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            background: rgba(225, 37, 83, 0.1);
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(225, 37, 83, 0.2);
+            transition: 0.3s;
+            width: fit-content;
+        }
+
+        .method-link i {
+            font-size: 20px;
+            color: var(--primary-red);
+        }
+
+        .method-link:hover {
+            background: var(--primary-red);
+            border-color: var(--primary-red);
+            transform: scale(1.05);
+        }
+
+        .method-link:hover i {
+            color: #fff;
+        }
+
+        .adm-cta-container {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-large {
+            padding: 22px 50px;
+            font-size: 18px;
+            border-radius: 100px;
+            box-shadow: 0 20px 40px rgba(225, 37, 83, 0.3);
+        }
+
+        .adm-footer-note {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.3);
+            text-align: center;
+            margin-top: 40px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .adm-card {
+                padding: 40px 24px;
+                border-radius: 0;
+                background: transparent;
+                border: none;
+                box-shadow: none;
+            }
+
+            .methods-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .admission-hero {
+                padding: 140px 0 60px;
+            }
+
+            .docs-list li {
+                padding: 18px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">URBAN<span>COLLEGE</span></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about" data-i18n="nav.about">Біз туралы</a></li>
+                    <li><a href="index.html#timeline" data-i18n="nav.timeline">Кезеңдер</a></li>
+                    <li><a href="index.html#dual" data-i18n="nav.dual">Дуалдық оқыту</a></li>
+                    <li><a href="index.html#partners" data-i18n="nav.partners">Серіктестер</a></li>
+                    <li><a href="index.html#enactus" data-i18n="nav.enactus">Enactus</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-pill d-desktop">
+                    <button class="lang-pill-btn">KAZ</button>
+                    <button class="lang-pill-btn">РУС</button>
+                    <button class="lang-pill-btn">ENG</button>
+                    <button class="lang-pill-btn">TUR</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <i class='bx bx-menu-alt-right'></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu-close" id="mobile-menu-close">
+                <i class='bx bx-x'></i>
+            </button>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html#about" data-i18n="nav.about">Біз туралы</a></li>
+                    <li><a href="index.html#timeline" data-i18n="nav.timeline">Кезеңдер</a></li>
+                    <li><a href="index.html#dual" data-i18n="nav.dual">Дуалдық оқыту</a></li>
+                    <li><a href="index.html#partners" data-i18n="nav.partners">Серіктестер</a></li>
+                    <li><a href="index.html#enactus" data-i18n="nav.enactus">Enactus</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-actions">
+                <div class="lang-pill mt-32">
+                    <button class="lang-pill-btn">KAZ</button>
+                    <button class="lang-pill-btn">РУС</button>
+                    <button class="lang-pill-btn">ENG</button>
+                    <button class="lang-pill-btn">TUR</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="admission-hero">
+            <div class="container ad-header">
+                <h1 data-i18n="adm.title">ҚҰЖАТ ТАПСЫРУ ҮЛГІСІ ТУРАЛЫ</h1>
+                <p class="adm-subtitle" data-i18n="adm.subtitle">2026−2027 ОҚУ ЖЫЛЫНА ҚҰЖАТТАР 2026 ЖЫЛДЫҢ 25 МАУСЫМЫНАН
+                    БАСТАП ҚАБЫЛДАЙДЫ</p>
+            </div>
+        </div>
+
+        <div class="container admission-container">
+            <div class="adm-card reveal">
+                <!-- Documents Section -->
+                <div class="adm-section">
+                    <h2 class="adm-section-title">
+                        <i class='bx bx-folder-open'></i>
+                        <span data-i18n="adm.docs.title">ҚАБЫЛДАУ КОМИССИЯСЫНА КЕЛЕСІ ҚҰЖАТТАР:</span>
+                    </h2>
+                    <ul class="docs-list">
+                        <li data-i18n="adm.doc1">Білімі туралы құжат (аттестат) – түпнұсқа</li>
+                        <li data-i18n="adm.doc2">Туу туралы куәлік, жеке куәлік немесе талапкердің төлқұжаты</li>
+                        <li data-i18n="adm.doc3">Фотокарта 3*4</li>
+                        <li data-i18n="adm.doc4">№ 075у (флюорографиямен) нысанды медициналық анықтама</li>
+                        <li data-i18n="adm.doc5">Мектептегі мінездеме</li>
+                    </ul>
+                </div>
+
+                <!-- Note -->
+                <div class="adm-note" data-i18n="adm.note">
+                    Ескерту: өтініш берушінің жеке басын куәландыратын құжаттың түпнұсқасын өзі – ата-анасы немесе заңды
+                    өкілдері ұсынуы тиіс.
+                </div>
+
+                <!-- Methods Section -->
+                <div class="adm-section">
+                    <h2 class="adm-section-title">
+                        <i class='bx bx-directions'></i>
+                        <span data-i18n="adm.methods.title">ҚҰЖАТТАРДЫ 2-ТӘСІЛМЕН ТАПСЫРУҒА БОЛАДЫ:</span>
+                    </h2>
+                    <div class="methods-grid">
+                        <!-- Offline -->
+                        <div class="method-card">
+                            <div>
+                                <h3 data-i18n="adm.offline.title">Оффлайн — колледждің өзінде</h3>
+                                <p data-i18n="adm.offline.addr">Қазақстан Республикасы, Астана, Дәулеткерей көшесі, 1
+                                </p>
+                            </div>
+                            <a href="https://wa.me/77084255412" class="method-link" target="_blank">
+                                <i class='bx bxl-whatsapp'></i> <span>+7 708 425 5412</span>
+                            </a>
+                        </div>
+                        <!-- Online -->
+                        <div class="method-card">
+                            <div>
+                                <h3 data-i18n="adm.online.title">Онлайн — ТАПСЫРЫС БЕРУ түймесін басыңыз</h3>
+                                <p data-i18n="adm.online.text">Төмендегі түймені басып, пішінді толтыру арқылы.</p>
+                            </div>
+                            <!-- Just visual anchor for structure consistency -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="adm-cta-container">
+                    <a href="https://college.snation.kz/kz/nqz" target="_blank" class="btn-primary btn-large"
+                        data-i18n="adm.cta">Тапсырыс беру</a>
+                </div>
+
+                <p class="adm-footer-note" data-i18n="adm.footer.note">
+                    *Құжаттар тізбесі Қазақстан Республикасы «Білім туралы» Заңының 26-бабының 6-тармағының негізінде
+                    қалыптастырылған.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p data-i18n="footer.copy">© 2025 URBAN COLLEGE. Барлық құқықтар қорғалған.</p>
+                <p><span data-i18n="footer.made">Дайындаған:</span> <span style="color: var(--primary-red);">Urban
+                        College Team</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="i18n.js"></script>
+</body>
+
+</html>
