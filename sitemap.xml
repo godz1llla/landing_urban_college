@@ -5,7 +5,7 @@
   <!-- Main page - Kazakh (default) -->
   <url>
     <loc>https://www.urban.edu.kz/</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="kk" href="https://www.urban.edu.kz/"/>
@@ -15,10 +15,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.urban.edu.kz/"/>
   </url>
 
+  <!-- Admission page -->
+  <url>
+    <loc>https://www.urban.edu.kz/admission.html</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Russian version -->
   <url>
     <loc>https://www.urban.edu.kz/?lang=ru</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -26,17 +34,16 @@
   <!-- English version -->
   <url>
     <loc>https://www.urban.edu.kz/?lang=en</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-14</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
   <!-- Turkish version -->
   <url>
     <loc>https://www.urban.edu.kz/?lang=tr</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2026-03-14</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
   </url>
-
 </urlset>
