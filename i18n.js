@@ -16,7 +16,7 @@ const translations = {
         'hero.title': 'КҮШ ҚУАТ МЕКЕНІ',
         'hero.subtitle': 'ЕРКІН ӨМІР СҮРУ ҮШІН ҚАЖЕТТІ ДАҒДЫЛАР. Болашаққа нық қадамды бізбен бірге жасаңыз.',
         'hero.contact': 'Байланысқа шығу',
-        'hero.more': 'Толығырақ',
+        'hero.more': 'Жас талапкер',
 
         // Facts
         'facts.item1.title': '17 жыл',
@@ -58,6 +58,35 @@ const translations = {
 
         // Partners
         'partners.title': 'БІЗДІҢ СЕРІКТЕСТЕРІМІЗ',
+
+        // Educational Programs (Professions)
+        'progs.title': 'БІЛІМ БЕРУ БАҒДАРЛАМАЛАРЫ',
+        'progs.qual.label': 'БІЛІКТІЛІК:',
+        'progs.p1.code': '06130100',
+        'progs.p1.name': 'Бағдарламалық қамтамасыз ету (түрлері бойынша)',
+        'progs.p1.q1': '4S06130105 Желі және жүйе әкімшілігінің технигі',
+        'progs.p2.code': '06120100',
+        'progs.p2.name': 'Есептеу техникасы және ақпараттық желілер',
+        'progs.p2.q1': '4S06120102 Желілік және жүйелік әкімшілендіру техникасы',
+        'progs.p3.code': '06120200',
+        'progs.p3.name': 'Ақпараттық қауіпсіздік жүйелері',
+        'progs.p3.q1': '4S06120202 Ақпараттық қауіпсіздік технигі',
+        'progs.p4.code': '07321100',
+        'progs.p4.name': 'Тұрғын үй-коммуналдық шаруашылық объектілерінің инженерлік жүйелерін монтаждау жəне пайдалану',
+        'progs.p4.q1': '3W07321102 Тұрғын үй-коммуналдық шаруашылық объектілерінің инженерлік жүйелеріне қызмет көрсету жөніндегі шебер',
+        'progs.p4.q2': '4S07321103 Инженерлік жүйелерді монтаждау жəне пайдалану жөніндегі техник',
+        'progs.p5.code': '07130200',
+        'progs.p5.name': 'Электрмен жабдықтау (салалар бойынша)',
+        'progs.p5.q1': '3W07130201 Электромонтажшы (салалар бойынша)',
+        'progs.p5.q2': '4S07130202 Техник-электрик',
+        'progs.p6.code': '10130100',
+        'progs.p6.name': 'Қонақ үй бизнесі',
+        'progs.p6.q1': '3W10130102 Аға қызметші',
+        'progs.p6.q2': '4S10130103 Қонақ үйдің оперативті менеджері',
+        'progs.p7.code': '07320400',
+        'progs.p7.name': 'Жылжымайтын мүлікті басқару',
+        'progs.p7.q1': '3W07320401 Хаус мастер',
+        'progs.p7.q2': '4S07320402 Көп пәтерлі тұрғын үй басқармашысы',
 
         // Dual
         'dual.title': 'ДУАЛДЫҚ ОҚЫТУ',
@@ -102,7 +131,7 @@ const translations = {
         'hero.title': 'МЕСТО СИЛЫ И ВОЗМОЖНОСТЕЙ',
         'hero.subtitle': 'НАВЫКИ, НЕОБХОДИМЫЕ ДЛЯ СВОБОДНОЙ ЖИЗНИ. Сделайте уверенный шаг в будущее вместе с нами.',
         'hero.contact': 'Связаться с нами',
-        'hero.more': 'Подробнее',
+        'hero.more': 'Молодой абитуриент',
 
         // Facts
         'facts.item1.title': '17 лет',
@@ -144,6 +173,35 @@ const translations = {
 
         // Partners
         'partners.title': 'НАШИ ПАРТНЁРЫ',
+
+        // Educational Programs (Professions)
+        'progs.title': 'ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ',
+        'progs.qual.label': 'КВАЛИФИКАЦИЯ:',
+        'progs.p1.code': '06130100',
+        'progs.p1.name': 'Программное обеспечение (по видам)',
+        'progs.p1.q1': '4S06130105 Техник по сетевому и системному администрированию',
+        'progs.p2.code': '06120100',
+        'progs.p2.name': 'Вычислительная техника и информационные сети',
+        'progs.p2.q1': '4S06120102 Техник по сетевому и системному администрированию',
+        'progs.p3.code': '06120200',
+        'progs.p3.name': 'Системы информационной безопасности',
+        'progs.p3.q1': '4S06120202 Техник по информационной безопасности',
+        'progs.p4.code': '07321100',
+        'progs.p4.name': 'Монтаж и эксплуатация инженерных систем объектов жилищно-коммунального хозяйства',
+        'progs.p4.q1': '3W07321102 Мастер по обслуживанию инженерных систем объектов ЖКХ',
+        'progs.p4.q2': '4S07321103 Техник по монтажу и эксплуатации инженерных систем',
+        'progs.p5.code': '07130200',
+        'progs.p5.name': 'Электроснабжение (по отраслям)',
+        'progs.p5.q1': '3W07130201 Электромонтажник (по отраслям)',
+        'progs.p5.q2': '4S07130202 Техник-электрик',
+        'progs.p6.code': '10130100',
+        'progs.p6.name': 'Гостиничный бизнес',
+        'progs.p6.q1': '3W10130102 Старший горничный',
+        'progs.p6.q2': '4S10130103 Оперативный менеджер гостиницы',
+        'progs.p7.code': '07320400',
+        'progs.p7.name': 'Управление недвижимостью',
+        'progs.p7.q1': '3W07320401 Хаус мастер',
+        'progs.p7.q2': '4S07320402 Управляющий многоквартирным жилым домом',
 
         // Dual
         'dual.title': 'ДУАЛЬНОЕ ОБУЧЕНИЕ',
@@ -188,7 +246,7 @@ const translations = {
         'hero.title': 'A PLACE OF POWER & POTENTIAL',
         'hero.subtitle': 'SKILLS YOU NEED FOR A FREE LIFE. Take a confident step into the future with us.',
         'hero.contact': 'Contact Us',
-        'hero.more': 'Learn More',
+        'hero.more': 'Young Applicant',
 
         // Facts
         'facts.item1.title': '17 Years',
@@ -231,6 +289,35 @@ const translations = {
         // Partners
         'partners.title': 'OUR PARTNERS',
 
+        // Educational Programs (Professions)
+        'progs.title': 'EDUCATIONAL PROGRAMS',
+        'progs.qual.label': 'QUALIFICATION:',
+        'progs.p1.code': '06130100',
+        'progs.p1.name': 'Software Engineering (by types)',
+        'progs.p1.q1': '4S06130105 Network and System Administration Technician',
+        'progs.p2.code': '06120100',
+        'progs.p2.name': 'Computing and Information Systems',
+        'progs.p2.q1': '4S06120102 Network and System Administration Technician',
+        'progs.p3.code': '06120200',
+        'progs.p3.name': 'Information Security Systems',
+        'progs.p3.q1': '4S06120202 Information Security Technician',
+        'progs.p4.code': '07321100',
+        'progs.p4.name': 'Installation and Operation of Engineering Systems for Housing and Utilities',
+        'progs.p4.q1': '3W07321102 Maintenance Specialist for Housing Engineering Systems',
+        'progs.p4.q2': '4S07321103 Technician for Installation and Operation of Engineering Systems',
+        'progs.p5.code': '07130200',
+        'progs.p5.name': 'Electricity Supply (by sectors)',
+        'progs.p5.q1': '3W07130201 Electrician for Sector-specific Installation',
+        'progs.p5.q2': '4S07130202 Electrical Technician',
+        'progs.p6.code': '10130100',
+        'progs.p6.name': 'Hotel Business',
+        'progs.p6.q1': '3W10130102 Senior Attendant',
+        'progs.p6.q2': '4S10130103 Hotel Operations Manager',
+        'progs.p7.code': '07320400',
+        'progs.p7.name': 'Real Estate Management',
+        'progs.p7.q1': '3W07320401 House Master',
+        'progs.p7.q2': '4S07320402 Multi-apartment Building Manager',
+
         // Dual
         'dual.title': 'DUAL EDUCATION',
         'dual.subtitle': 'Close cooperation between enterprises and the college.',
@@ -272,7 +359,7 @@ const translations = {
         'hero.title': 'GÜÇ VE FIRSATLAR MERKEZİ',
         'hero.subtitle': 'ÖZGÜR BİR YAŞAM İÇİN GEREKLİ BECERİLER. Geleceğe emin adımlarla bizimle yürüyün.',
         'hero.contact': 'Bize Ulaşın',
-        'hero.more': 'Daha Fazla',
+        'hero.more': 'Genç Aday',
 
         // Facts
         'facts.item1.title': '17 Yıl',
@@ -310,6 +397,35 @@ const translations = {
         'now.card2.text': 'Kapsamlı tadilat tamamlandı, ortam görsel olarak yenilendi. Öğrenciler için en iyi koşullar.',
 
         'partners.title': 'ORTAKLARIMIZ',
+
+        // Educational Programs (Professions)
+        'progs.title': 'EĞİTİM PROGRAMLARI',
+        'progs.qual.label': 'YETERLİLİK:',
+        'progs.p1.code': '06130100',
+        'progs.p1.name': 'Yazılım Mühendisliği (tүрлер бойынша)',
+        'progs.p1.q1': '4S06130105 Ağ ve Sistem Yönetimi Технигі',
+        'progs.p2.code': '06120100',
+        'progs.p2.name': 'Bilgisayar Teknolojisi ve Bilgi Ağları',
+        'progs.p2.q1': '4S06120102 Ağ ve Sistem Yönetimi Teknikeri',
+        'progs.p3.code': '06120200',
+        'progs.p3.name': 'Bilgi Güvenliği Sistemleri',
+        'progs.p3.q1': '4S06120202 Bilgi Güvenliği Teknikeri',
+        'progs.p4.code': '07321100',
+        'progs.p4.name': 'Konut ve Kamu Hizmetleri Mühendislik Sistemlerinin Kurulumu ve İşletilmesi',
+        'progs.p4.q1': '3W07321102 Konut Mühendislik Sistemleri Bakım Uzmanı',
+        'progs.p4.q2': '4S07321103 Mühendislik Sistemleri Kurulum ve İşletme Teknikeri',
+        'progs.p5.code': '07130200',
+        'progs.p5.name': 'Güç Kayнағы (Sektörlere göre)',
+        'progs.p5.q1': '3W07130201 Elektrik Tesisatçısı (Sektörlere göre)',
+        'progs.p5.q2': '4S07130202 Elektrik Teknikeri',
+        'progs.p6.code': '10130100',
+        'progs.p6.name': 'Otelcilik İşletmesi',
+        'progs.p6.q1': '3W10130102 Kıdemli Görevli',
+        'progs.p6.q2': '4S10130103 Otel Operasyon Müdürü',
+        'progs.p7.code': '07320400',
+        'progs.p7.name': 'Gayrimenkul Yönetimi',
+        'progs.p7.q1': '3W07320401 Ev Bakım Uzmanı',
+        'progs.p7.q2': '4S07320402 Çok Katlı Bina Yöneticisi',
 
         'dual.title': 'ÇİFT YÖNLÜ EĞİTİM',
         'dual.subtitle': 'İşletmeler ile kolej arasındaki yakın iş birliği.',

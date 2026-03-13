@@ -622,6 +622,103 @@ img {
     }
 }
 
+/* Professions Section */
+.progs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.prog-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: var(--shadow-md);
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.prog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(225, 37, 83, 0.15);
+}
+
+.prog-code {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--primary-black);
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.prog-card h3 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.4;
+    color: var(--primary-black);
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.prog-divider {
+    height: 1.5px;
+    width: 60px;
+    background: var(--primary-red);
+    margin-bottom: 24px;
+    border-radius: 2px;
+}
+
+.qual-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 900;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.prog-qual ul {
+    list-style: none;
+    padding: 0;
+}
+
+.prog-qual li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.prog-qual li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-red);
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .progs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prog-card {
+        padding: 32px;
+    }
+}
+
 /* =========================================
    Sticky Scroll Timeline
    ========================================= */
